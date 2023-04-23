@@ -71,6 +71,13 @@ function App() {
       { name: "Snow Barbarian", cr: "1/4", terrain: "arctic", faction: "Snow Barbarians" },
       { name: "Pair of Yeti Tykes", cr: "1/4", terrain: "arctic", faction: "Indigenous" },
       { name: "Apprentice Wizard", cr: "1/4", terrain: "arctic", faction: "Sueloise" },
+      { name: "Acolyte", cr: "1/4", terrain: "desert", faction: "Baklunish" },
+      { name: "Night Blade", cr: "1/4", terrain: "desert", faction: "Rary-Bright Empire" },
+      { name: "Riding Horse", cr: "1/4", terrain: "desert", faction: "Flan" },
+      { name: "Engineer - gnome or dwarf", cr: "1/4", terrain: "desert", faction: "Azak-Zil Demihumans" },
+      { name: "Steam Mephit", cr: "1/4", terrain: "desert", faction: "Elemental Fire" },
+      { name: "Giant Riding Lizard", cr: "1/4", terrain: "desert", faction: "Desert Fauna" },
+      { name: "Skeleton", cr: "1/4", terrain: "desert", faction: "Old Sulm" },
     ],
     "1/2": [
       { name: "Shadow", cr: "1/2", terrain: "arctic", faction: "Frostmourne" },
@@ -80,6 +87,13 @@ function App() {
       { name: "Scout", cr: "1/2", terrain: "arctic", faction: "Snow Barbarians" },
       { name: "Ice Mephit", cr: "1/2", terrain: "arctic", faction: "Indigenous" },
       { name: "Thug", cr: "1/2", terrain: "arctic", faction: "Sueloise" },
+      { name: "Sage", cr: "1/2", terrain: "desert", faction: "Baklunish" },
+      { name: "Soldier", cr: "1/2", terrain: "desert", faction: "Rary-Bright Empire" },
+      { name: "Scout", cr: "1/2", terrain: "desert", faction: "Flan" },
+      { name: "Battlehammer Dwarf", cr: "1/2", terrain: "desert", faction: "Azak-Zil Demihumans" },
+      { name: "Dust Mephit", cr: "1/2", terrain: "desert", faction: "Elemental Fire" },
+      { name: "Swarm of Beetles", cr: "1/2", terrain: "desert", faction: "Desert Fauna" },
+      { name: "Death’s Head", cr: "1/2", terrain: "desert", faction: "Old Sulm" },
     ],
     "1": [
       { name: "Snow Maiden", cr: "1", terrain: "arctic", faction: "Frostmourne" },
@@ -298,8 +312,8 @@ function App() {
           >
             <option value="">Select terrain</option>
             <option value="arctic">Arctic</option>
-            <option value="desert">Arctic</option>
-            <option value="forest">Arctic</option>
+            <option value="desert">Desert</option>
+            <option value="forest">Forest</option>
             {/* Add more terrain options here */}
           </select>
         </label>
