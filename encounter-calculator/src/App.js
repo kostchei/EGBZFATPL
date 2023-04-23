@@ -198,7 +198,7 @@ function App() {
         "Settled Woodland",
 
       ]
-      // ... (Add faction lists for other terrains)
+      // ... (Add faction lists for other terrains and further)
     };
   
     setFactions(factionsByTerrain[terrain] || []);
