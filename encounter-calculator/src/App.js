@@ -64,37 +64,54 @@ function App() {
 
   const monstersByCR = {
     "1/4": [
-      { name: "Giant Centipede", cr: "1/4", terrain: "arctic", faction: "Frostmourne" },
+      { name: "Skeleton", cr: "1/4", terrain: "arctic", faction: "Frostmourne" },
       { name: "Winter Sprite", cr: "1/4", terrain: "arctic", faction: "Feyfrost" },
-      { name: "Goblin", cr: "1/4", terrain: "arctic", faction: "Hodir Ordning" },
-      { name: "Frost Barbarian", cr: "1/4", terrain: "arctic", faction: "Frost Barbarians" },
+      { name: "Mountain Goat Buck and Nannie", cr: "1/4", terrain: "arctic", faction: "Hodir Ordning" },
+      { name: "Anarch", cr: "1/4", terrain: "arctic", faction: "Frost Barbarians" },
       { name: "Snow Barbarian", cr: "1/4", terrain: "arctic", faction: "Snow Barbarians" },
-      { name: "Ice Mephit", cr: "1/4", terrain: "arctic", faction: "Indigenous" },
-      { name: "Monk Initiate", cr: "1/4", terrain: "arctic", faction: "Sueloise" },
+      { name: "Pair of Yeti Tykes", cr: "1/4", terrain: "arctic", faction: "Indigenous" },
+      { name: "Apprentice Wizard", cr: "1/4", terrain: "arctic", faction: "Sueloise" },
     ],
     "1/2": [
-      { name: "Winter Wolf", cr: "1/2", terrain: "arctic", faction: "Frostmourne" },
-      { name: "Snow Faerie", cr: "1/2", terrain: "arctic", faction: "Feyfrost" },
-      { name: "Giant", cr: "1/2", terrain: "arctic", faction: "Hodir Ordning" },
-      { name: "Frost Hunter", cr: "1/2", terrain: "arctic", faction: "Frost Barbarians" },
-      { name: "Ice Berserker", cr: "1/2", terrain: "arctic", faction: "Snow Barbarians" },
-      { name: "Yeti", cr: "1/2", terrain: "arctic", faction: "Indigenous" },
-      { name: "Monk Disciple", cr: "1/2", terrain: "arctic", faction: "Sueloise" },
+      { name: "Shadow", cr: "1/2", terrain: "arctic", faction: "Frostmourne" },
+      { name: "Valenar Steed", cr: "1/2", terrain: "arctic", faction: "Feyfrost" },
+      { name: "Young Hill Giant", cr: "1/2", terrain: "arctic", faction: "Hodir Ordning" },
+      { name: "Soldier", cr: "1/2", terrain: "arctic", faction: "Frost Barbarians" },
+      { name: "Scout", cr: "1/2", terrain: "arctic", faction: "Snow Barbarians" },
+      { name: "Ice Mephit", cr: "1/2", terrain: "arctic", faction: "Indigenous" },
+      { name: "Thug", cr: "1/2", terrain: "arctic", faction: "Sueloise" },
     ],
     "1": [
-      { name: "Polar Bear", cr: "1", terrain: "arctic", faction: "Frostmourne" },
-      { name: "Ice Fairy", cr: "1", terrain: "arctic", faction: "Feyfrost" },
-      { name: "Frost Giant", cr: "1", terrain: "arctic", faction: "Hodir Ordning" },
-      { name: "Frost Shaman", cr: "1", terrain: "arctic", faction: "Frost Barbarians" },
-      { name: "Ice Witch", cr: "1", terrain: "arctic", faction: "Snow Barbarians" },
-      { name: "Polar Bear Alpha", cr: "1", terrain: "arctic", faction: "Indigenous" },
-      { name: "Monk Master", cr: "1", terrain: "arctic", faction: "Sueloise" },
-    ],
-    "2": [
-      { name: "Remorhaz", cr: "2", terrain: "arctic", faction: "Frostmourne" },
+      { name: "Snow Maiden", cr: "1", terrain: "arctic", faction: "Frostmourne" },
+      { name: "Dread Warrior", cr: "1", terrain: "arctic", faction: "Frostmourne" },
+      { name: "Specter", cr: "1", terrain: "arctic", faction: "Frostmourne" },
+      { name: "Returned Sentry", cr: "1", terrain: "arctic", faction: "Frostmourne" },
+      { name: "Quickling", cr: "1", terrain: "arctic", faction: "Feyfrost" },
+      { name: "Dryad", cr: "1", terrain: "arctic", faction: "Feyfrost" },
+      { name: "Half-Ogre", cr: "1", terrain: "arctic", faction: "Hodir Ordning" },
+      { name: "Skull Lasher", cr: "1", terrain: "arctic", faction: "Frost Barbarians" },
+      { name: "Spy", cr: "1", terrain: "arctic", faction: "Snow Barbarians" },
+      { name: "Brown Bear", cr: "1", terrain: "arctic", faction: "Indigenous" },
+      { name: "Giant Eagle", cr: "1", terrain: "arctic", faction: "Indigenous" },
+      { name: "Evil Mage", cr: "1", terrain: "arctic", faction: "Sueloise" },
+      ],
+      "2": [
+      { name: "Ghast (gheist)", cr: "2", terrain: "arctic", faction: "Frostmourne" },
+      { name: "Will-o-Wisp", cr: "2", terrain: "arctic", faction: "Frostmourne" },
+      { name: "Undying Soldier", cr: "2", terrain: "arctic", faction: "Frostmourne" },
       { name: "Ice Nymph", cr: "2", terrain: "arctic", faction: "Feyfrost" },
-      
-  
+      { name: "Glacial Hag", cr: "2", terrain: "arctic", faction: "Feyfrost" },
+      { name: "Ogre", cr: "2", terrain: "arctic", faction: "Hodir Ordning" },
+      { name: "Fathomer", cr: "2", terrain: "arctic", faction: "Frost Barbarians" },
+      { name: "Barbarian Leader", cr: "2", terrain: "arctic", faction: "Frost Barbarians" },
+      { name: "Berserker", cr: "2", terrain: "arctic", faction: "Frost Barbarians" },
+      { name: "Barbarian Leader", cr: "2", terrain: "arctic", faction: "Snow Barbarians" },
+      { name: "Barbarian Shaman", cr: "2", terrain: "arctic", faction: "Snow Barbarians" },
+      { name: "Druid", cr: "2", terrain: "arctic", faction: "Snow Barbarians" },
+      { name: "Sabretooth", cr: "2", terrain: "arctic", faction: "Indigenous" },
+      { name: "Polar Bear", cr: "2", terrain: "arctic", faction: "Indigenous" },
+      { name: "Protege (Thayan Apprentice)", cr: "2", terrain: "arctic", faction: "Sueloise" },
+      { name: "Bandit Captain", cr: "2", terrain: "arctic", faction: "Sueloise" }, 
     ],
    
   };
@@ -160,19 +177,25 @@ function App() {
   
     return encounter;
   }
+  function getPartyXPThreshold(partySize, partyLevel, difficultyThresholds, difficulty) {
+    return (
+      difficultyThresholds.find((threshold) => threshold.level === partyLevel)[
+        difficulty
+      ] * partySize
+    );
+  }
   
-
   function handleSubmit(event) {
     event.preventDefault();
-
+  
     const filteredMonstersByCR = filterMonstersByTerrainAndFaction(monstersByCR, terrain, selectedFaction);
-
-    const partyXPThreshold = difficultyThresholds
-      .find((threshold) => threshold.level === partyLevel)[difficulty];
-    const generatedEncounter = generateEncounter(partyXPThreshold, challengeRatingList, filteredMonstersByCR);
-
+  
+    const adjustedXPBudget = getPartyXPThreshold(partySize, partyLevel, difficultyThresholds, difficulty);
+    const generatedEncounter = generateEncounter(adjustedXPBudget, challengeRatingList, filteredMonstersByCR);
+  
     setEncounterList(generatedEncounter);
   }
+  
   
 
   return (
