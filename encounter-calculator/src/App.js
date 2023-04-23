@@ -95,7 +95,7 @@ function App() {
       { name: "Giant Eagle", cr: "1", terrain: "arctic", faction: "Indigenous" },
       { name: "Evil Mage", cr: "1", terrain: "arctic", faction: "Sueloise" },
       ],
-      "2": [
+    "2": [
       { name: "Ghast (gheist)", cr: "2", terrain: "arctic", faction: "Frostmourne" },
       { name: "Will-o-Wisp", cr: "2", terrain: "arctic", faction: "Frostmourne" },
       { name: "Undying Soldier", cr: "2", terrain: "arctic", faction: "Frostmourne" },
@@ -113,7 +113,47 @@ function App() {
       { name: "Protege (Thayan Apprentice)", cr: "2", terrain: "arctic", faction: "Sueloise" },
       { name: "Bandit Captain", cr: "2", terrain: "arctic", faction: "Sueloise" }, 
     ],
-   
+    "3": [
+      { name: "Wight", cr: "3", terrain: "arctic", faction: "Frostmourne" },
+      { name: "Redcap", cr: "3", terrain: "arctic", faction: "Feyfrost" },
+      { name: "Hag of fetid Gaze", cr: "3", terrain: "arctic", faction: "Feyfrost" },
+      { name: "Ice Troll", cr: "3", terrain: "arctic", faction: "Hodir Ordning" },
+      { name: "Werewolf", cr: "3", terrain: "arctic", faction: "Frost Barbarians" },
+      { name: "Archer", cr: "3", terrain: "arctic", faction: "Snow Barbarians" },
+      { name: "Winter Wolf", cr: "3", terrain: "arctic", faction: "Indigenous" },
+      { name: "Yeti", cr: "3", terrain: "arctic", faction: "Indigenous" },
+      { name: "Precognitive Mage", cr: "3", terrain: "arctic", faction: "Sueloise" },
+      ],
+    "4": [
+      { name: "Banshee", cr: "4", terrain: "arctic", faction: "Frostmourne" },
+      { name: "Deathlock", cr: "4", terrain: "arctic", faction: "Frostmourne" },
+      { name: "Soul shaker", cr: "4", terrain: "arctic", faction: "Frostmourne" },
+      { name: "Ghost", cr: "4", terrain: "arctic", faction: "Frostmourne" },
+      { name: "Yeth Hound", cr: "4", terrain: "arctic", faction: "Feyfrost" },
+      { name: "Sea Hag", cr: "4", terrain: "arctic", faction: "Feyfrost" },
+      { name: "Verbeeg Marauder", cr: "4", terrain: "arctic", faction: "Hodir Ordning" },
+      { name: "Ettin", cr: "4", terrain: "arctic", faction: "Hodir Ordning" },
+      { name: "Weretiger", cr: "4", terrain: "arctic", faction: "Frost Barbarians" },
+      { name: "Wereboar", cr: "4", terrain: "arctic", faction: "Frost Barbarians" },
+      { name: "Oracle", cr: "4", terrain: "arctic", faction: "Snow Barbarians" },
+      { name: "Guardian Wolf", cr: "4", terrain: "arctic", faction: "Indigenous" },
+      { name: "Sueloise Reckoner", cr: "4", terrain: "arctic", faction: "Sueloise" },
+      ],
+    "5": [
+      { name: "Wraith", cr: "5", terrain: "arctic", faction: "Frostmourne" },
+      { name: "Knight of the Order", cr: "5", terrain: "arctic", faction: "Frostmourne" },
+      { name: "Woodwoad", cr: "5", terrain: "arctic", faction: "Feyfrost" },
+      { name: "Harpy Matriarch", cr: "5", terrain: "arctic", faction: "Feyfrost" },
+      { name: "Ice Troll", cr: "5", terrain: "arctic", faction: "Hodir Ordning" },
+      { name: "Hill Giant", cr: "5", terrain: "arctic", faction: "Hodir Ordning" },
+      { name: "Frost Giant Servant", cr: "5", terrain: "arctic", faction: "Hodir Ordning" },
+      { name: "Gladiator", cr: "5", terrain: "arctic", faction: "Frost Barbarians" },
+      { name: "Great Warrior", cr: "5", terrain: "arctic", faction: "Snow Barbarians" },
+      { name: "Tlacatecolo", cr: "5", terrain: "arctic", faction: "Indigenous" },
+      { name: "Unicorn", cr: "5", terrain: "arctic", faction: "Indigenous" },
+      { name: "Immortal Lotus Monk", cr: "5", terrain: "arctic", faction: "Sueloise" },
+      ],
+      
   };
   
   function updateFactions(terrain) {
