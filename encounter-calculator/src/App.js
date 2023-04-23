@@ -167,6 +167,23 @@ function App() {
         "Indigenous",
         "Sueloise",
       ],
+      desert: [
+        "Baklunish", 
+        "Rary-Bright Empire",
+        "Old Sulm", 
+        "Flan",
+        "Azak-Zil Demihumans",
+        "Elemental Fire",
+        "Desert Fauna",
+      ],
+      forest: [
+        "Elvish",
+        "Haunted",
+        "Feywild", 
+        "Primordial",
+        "Settled Woodland",
+
+      ]
       // ... (Add faction lists for other terrains)
     };
   
@@ -281,6 +298,8 @@ function App() {
           >
             <option value="">Select terrain</option>
             <option value="arctic">Arctic</option>
+            <option value="desert">Arctic</option>
+            <option value="forest">Arctic</option>
             {/* Add more terrain options here */}
           </select>
         </label>
