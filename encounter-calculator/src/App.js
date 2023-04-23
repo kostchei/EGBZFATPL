@@ -68,7 +68,7 @@ function App() {
       { name: "Winter Sprite", cr: "1/4", terrain: "arctic", faction: "Feyfrost" },
       { name: "Mountain Goat Buck and Nannie", cr: "1/4", terrain: "arctic", faction: "Hodir Ordning" },
       { name: "Anarch", cr: "1/4", terrain: "arctic", faction: "Frost Barbarians" },
-      { name: "Snow Barbarian", cr: "1/4", terrain: "arctic", faction: "Snow Barbarians" },
+      { name: "Reindeer", cr: "1/4", terrain: "arctic", faction: "Snow Barbarians" },
       { name: "Pair of Yeti Tykes", cr: "1/4", terrain: "arctic", faction: "Indigenous" },
       { name: "Apprentice Wizard", cr: "1/4", terrain: "arctic", faction: "Sueloise" },
       { name: "Acolyte", cr: "1/4", terrain: "desert", faction: "Baklunish" },
