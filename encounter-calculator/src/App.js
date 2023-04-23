@@ -164,59 +164,87 @@ function App() {
 
   function handleSubmit(event) {
     event.preventDefault();
-  
-    const filteredMonstersByCR = filterMonstersByTerrainAndFaction(monstersByCR, terrain, faction);
-  
-    const partyXPThreshold = getPartyXPThreshold(partySize, partyLevel, difficultyThresholds);
+
+    const filteredMonstersByCR = filterMonstersByTerrainAndFaction(monstersByCR, terrain, selectedFaction);
+
+    const partyXPThreshold = difficultyThresholds
+      .find((threshold) => threshold.level === partyLevel)[difficulty];
     const generatedEncounter = generateEncounter(partyXPThreshold, challengeRatingList, filteredMonstersByCR);
-  
-    setEncounter(generatedEncounter);
+
+    setEncounterList(generatedEncounter);
   }
   
 
   return (
     <div className="App">
-      <h1>5th Edition Encounter Calculator</h1>
+      <h1>Encounter Generator</h1>
       <form onSubmit={handleSubmit}>
         <label>
           Party Size:
           <input
             type="number"
-            min="1"
-            max="6"
             value={partySize}
-            onChange={(event) => setPartySize(parseInt(event.target.value))}
+            onChange={(e) => setPartySize(parseInt(e.target.value))}
           />
         </label>
         <label>
           Party Level:
           <input
             type="number"
-            min="1"
-            max="20"
             value={partyLevel}
-            onChange={(event) => setPartyLevel(parseInt(event.target.value))}
+            onChange={(e) => setPartyLevel(parseInt(e.target.value))}
           />
         </label>
         <label>
           Difficulty:
-          <select value={difficulty} onChange={(event) => setDifficulty(event.target.value)}>
+          <select
+            value={difficulty}
+            onChange={(e) => setDifficulty(e.target.value)}
+          >
             <option value="easy">Easy</option>
             <option value="medium">Medium</option>
             <option value="hard">Hard</option>
             <option value="deadly">Deadly</option>
           </select>
         </label>
+        <label>
+          Terrain:
+          <select
+            value={terrain}
+            onChange={(e) => {
+              setTerrain(e.target.value);
+              updateFactions(e.target.value);
+            }}
+          >
+            <option value="">Select terrain</option>
+            <option value="arctic">Arctic</option>
+            {/* Add more terrain options here */}
+          </select>
+        </label>
+        <label>
+          Faction:
+          <select
+            value={selectedFaction}
+            onChange={(e) => setSelectedFaction(e.target.value)}
+          >
+            <option value="">Select faction</option>
+            {factions.map((faction) => (
+              <option key={faction} value={faction}>
+                {faction}
+              </option>
+            ))}
+          </select>
+        </label>
         <button type="submit">Generate Encounter</button>
       </form>
-      <div>
-        <h2>Encounter:</h2>
-        <ul>
-          {encounterList.map((monster, index) => (
-            <li key={index}>{monster.name}</li>
-          ))}
-        </ul>
-      </div>
+      <h2>Encounter:</h2>
+      <ul>
+        {encounterList.map((monster, index) => (
+          <li key={index}>
+            {monster.name} (CR: {monster.cr})
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
