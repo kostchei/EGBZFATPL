@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encounter Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>5th Edition Encounter Calculator</h1>
+    <form id="encounter-form">
+        <label for="party-size">Party Size:</label>
+        <input type="number" id="party-size" min="1" value="4">
+
+        <label for="party-level">Average Party Level:</label>
+        <input type="number" id="party-level" min="1" value="1">
+
+        <label for="difficulty">Difficulty:</label>
+        <select id="difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+            <option value="deadly">Deadly</option>
+        </select>
+
+        <button type="submit">Generate Encounter</button>
+    </form>
+    <div id="encounter-output"></div>
+    <script src="scripts.js"></script>
+</body>
+</html>
