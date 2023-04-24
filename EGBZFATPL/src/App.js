@@ -9,7 +9,17 @@ function App() {
   const [terrain, setTerrain] = useState('');
   const [factions, setFactions] = useState([]);
   const [selectedFaction, setSelectedFaction] = useState('');
+  const [encounterDistance, setEncounterDistance] = useState(0);
 
+  const terrainDistanceMap = {
+    desert: () => rollDice(6, 6) * 10,
+    arctic: () => rollDice(6, 6) * 10,
+    forest: () => rollDice(2, 8) * 20,
+    // Add more terrain types here
+  };
+  
+
+  
 
 
   const difficultyThresholds = [
@@ -35,6 +45,7 @@ function App() {
     { level: 20, easy: 2800, medium: 5700, hard: 8500, deadly: 12700 },
   ];
   
+
 
   const challengeRatingList = [
     { cr: "1/4", xp: 50 },
@@ -237,6 +248,21 @@ function App() {
 
         
   };
+  function generateEncounterDistance(terrain) {
+    const distanceFunction = terrainDistanceMap[terrain];
+    if (distanceFunction) {
+      return distanceFunction();
+    }
+    return 0;
+  }
+  
+  function rollDice(numberOfDice, sides) {
+    let total = 0;
+    for (let i = 0; i < numberOfDice; i++) {
+      total += Math.floor(Math.random() * sides) + 1;
+    }
+    return total;
+  }
   
   function updateFactions(terrain) {
     const factionsByTerrain = {
@@ -333,6 +359,7 @@ function App() {
     const generatedEncounter = generateEncounter(adjustedXPBudget, challengeRatingList, filteredMonstersByCR);
   
     setEncounterList(generatedEncounter);
+    setEncounterDistance(generateEncounterDistance(terrain));
   }
   
   
@@ -409,8 +436,17 @@ function App() {
           </li>
         ))}
       </ul>
+      {encounterList.length > 0 && (
+  <p>
+    Encounter Distance: {encounterDistance} feet
+  </p>
+)}
+
     </div>
   );
 }
+
+
+
 
 export default App;
