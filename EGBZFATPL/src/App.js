@@ -202,9 +202,38 @@ function App() {
         { name: "Warpriest", cr: "9", terrain: "arctic", faction: "Frost Barbarians" },
         { name: "Treant", cr: "9", terrain: "arctic", faction: "Snow Barbarians" },
         { name: "Abominable Yeti", cr: "9", terrain: "arctic", faction: "Indigenous" },
-        { name: "Sueloise Evoker Wizard", cr: "8", terrain: "arctic", faction: "Sueloise" },
+        { name: "Sueloise Evoker Wizard", cr: "9", terrain: "arctic", faction: "Sueloise" },
         ],
-             
+        10: [
+          { name: "Lesser Death Dragon", cr: 10, terrain: "arctic", faction: "Frostmourne" },
+          { name: "Winter Eldarin", cr: 10, terrain: "arctic", faction: "Feyfrost" },
+          { name: "Sunder Shaman", cr: 10, terrain: "arctic", faction: "Hodir Ordning" },
+          { name: "Chardalyn Berserker and 6 Beserkers", cr: 10, terrain: "arctic", faction: "Frost Barbarians" },
+          { name: "Stone Golem", cr: 10, terrain: "arctic", faction: "Snow Barbarians" },
+          { name: "Quaggoth Thonot and 4 Quaggoths", cr: 10, terrain: "arctic", faction: "Indigenous" },
+          { name: "Monastic High Curator", cr: "10", terrain: "arctic", faction: "Sueloise" },
+          ],
+          
+          11: [
+          { name: "Blackguard on Nightmare", cr: 11, terrain: "arctic", faction: "Frostmourne" },
+          { name: "3 Yeth hounds and a Dragon Hunter", cr: 11, terrain: "arctic", faction: "Feyfrost" },
+          { name: "Spirit Troll", cr: 11, terrain: "arctic", faction: "Hodir Ordning" },
+          { name: "Death Embrace", cr: 11, terrain: "arctic", faction: "Frost Barbarians" },
+          { name: "Behir", cr: 11, terrain: "arctic", faction: "Snow Barbarians" },
+          { name: "Remorhaz", cr: 11, terrain: "arctic", faction: "Indigenous" },
+          { name: "2 Monastic Infiltrators", cr: "11", terrain: "arctic", faction: "Sueloise" },
+          ],
+          
+          12: [
+          { name: "Boneclaw", cr: 12, terrain: "arctic", faction: "Frostmourne" },
+          { name: "Sea Fury", cr: 12, terrain: "arctic", faction: "Feyfrost" },
+          { name: "Frost Giant Everlasting One", cr: 12, terrain: "arctic", faction: "Hodir Ordning" },
+          { name: "Warlord", cr: 12, terrain: "arctic", faction: "Frost Barbarians" },
+          { name: "ArchDruid", cr: 12, terrain: "arctic", faction: "Snow Barbarians" },
+          { name: "6 Yeti", cr: 12, terrain: "arctic", faction: "Indigenous" },
+          { name: "ArchMage", cr: "12", terrain: "arctic", faction: "Sueloise" },
+          ],
+               
 
         
   };
