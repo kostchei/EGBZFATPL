@@ -183,9 +183,30 @@ function App() {
         { name: "5 Berserkers", cr: "7", terrain: "arctic", faction: "Frost Barbarians" },
         { name: "Druid of the Old Ways", cr: "7", terrain: "arctic", faction: "Snow Barbarians" },
         { name: "Giant White Ape", cr: "7", terrain: "arctic", faction: "Indigenous" },
-        { name: "Mage", cr: "7", terrain: "arctic", faction: "Sueloise" },
+        { name: "Lorehold Professor of Order", cr: "7", terrain: "arctic", faction: "Sueloise" },
         ],     
-      
+     "8": [
+      { name: "Swordwraith Commander", cr: "8", terrain: "arctic", faction: "Frostmourne" },
+      { name: "Astral Elf Aristocrat", cr: "8", terrain: "arctic", faction: "Feyfrost" },
+      { name: "Frost Giant", cr: "8", terrain: "arctic", faction: "Hodir Ordning" },
+      { name: "Goliath Werebear", cr: "8", terrain: "arctic", faction: "Frost Barbarians" },
+      { name: "Occult Silvertongue", cr: "8", terrain: "arctic", faction: "Snow Barbarians" },
+      { name: "Ice Troll", cr: "8", terrain: "arctic", faction: "Indigenous" },
+      { name: "Sueloise Assassin", cr: "8", terrain: "arctic", faction: "Sueloise" },
+      ],
+      "9": [
+        { name: "Frost Giant Zombie", cr: "9", terrain: "arctic", faction: "Frostmourne" },
+        { name: "Conclave Dryad", cr: "9", terrain: "arctic", faction: "Feyfrost" },
+        { name: "Cloud Giant", cr: "9", terrain: "arctic", faction: "Hodir Ordning" },
+        { name: "Fire Giant", cr: "9", terrain: "arctic", faction: "Hodir Ordning" },
+        { name: "Warpriest", cr: "9", terrain: "arctic", faction: "Frost Barbarians" },
+        { name: "Treant", cr: "9", terrain: "arctic", faction: "Snow Barbarians" },
+        { name: "Abominable Yeti", cr: "9", terrain: "arctic", faction: "Indigenous" },
+        { name: "Sueloise Evoker Wizard", cr: "8", terrain: "arctic", faction: "Sueloise" },
+        ],
+             
+
+        
   };
   
   function updateFactions(terrain) {
