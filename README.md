@@ -14,4 +14,4 @@ Appropriate treasure based on encounter
 Random faction option
 Random map with features, noise, obstacles
 Nice appearance
->>>>>>> 1427efd165820d841571cf4cb7116353f3c3713f
+
