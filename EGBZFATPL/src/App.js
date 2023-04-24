@@ -167,6 +167,24 @@ function App() {
       { name: "Unicorn", cr: "5", terrain: "arctic", faction: "Indigenous" },
       { name: "Immortal Lotus Monk", cr: "5", terrain: "arctic", faction: "Sueloise" },
       ],
+     "6": [
+      { name: "Frost Giant Skeleton", cr: "6", terrain: "arctic", faction: "Frostmourne" },
+      { name: "Annis Hag", cr: "6", terrain: "arctic", faction: "Feyfrost" },
+      { name: "Cyclops", cr: "6", terrain: "arctic", faction: "Hodir Ordning" },
+      { name: "3 Berserkers", cr: "6", terrain: "arctic", faction: "Frost Barbarians" },
+      { name: "Young White Dragon", cr: "6", terrain: "arctic", faction: "Snow Barbarians" },
+      { name: "Mammoth", cr: "6", terrain: "arctic", faction: "Indigenous" },
+      { name: "Mage", cr: "6", terrain: "arctic", faction: "Sueloise" },
+      ],
+      "7": [
+        { name: "Skeletal Knight", cr: "7", terrain: "arctic", faction: "Frostmourne" },
+        { name: "Bheur Hag", cr: "7", terrain: "arctic", faction: "Feyfrost" },
+        { name: "Stone giant", cr: "7", terrain: "arctic", faction: "Hodir Ordning" },
+        { name: "5 Berserkers", cr: "7", terrain: "arctic", faction: "Frost Barbarians" },
+        { name: "Druid of the Old Ways", cr: "7", terrain: "arctic", faction: "Snow Barbarians" },
+        { name: "Giant White Ape", cr: "7", terrain: "arctic", faction: "Indigenous" },
+        { name: "Mage", cr: "7", terrain: "arctic", faction: "Sueloise" },
+        ],     
       
   };
   
