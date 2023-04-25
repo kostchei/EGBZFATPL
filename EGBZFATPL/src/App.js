@@ -89,6 +89,9 @@ function App() {
       { name: "Steam Mephit", cr: "1/4", terrain: "desert", faction: "Elemental Fire" },
       { name: "Giant Riding Lizard", cr: "1/4", terrain: "desert", faction: "Desert Fauna" },
       { name: "Skeleton", cr: "1/4", terrain: "desert", faction: "Old Sulm" },
+      { name: "Engineer", cr: "1/4", terrain: "hills", faction: "Kronspire" },
+      { name: "Swarm of Raven", cr: "1/4", terrain: "mountain", faction: "Hodir Ordning" },
+      { name: "Apprentice Wizard", cr: "1/4", terrain: "jungle", faction: "Suleoise" },
     ],
     "1/2": [
       { name: "Shadow", cr: "1/2", terrain: "arctic", faction: "Frostmourne" },
@@ -247,22 +250,16 @@ function App() {
                
 
         
-  };
-  function generateEncounterDistance(terrain) {
-    const distanceFunction = terrainDistanceMap[terrain];
-    if (distanceFunction) {
-      return distanceFunction();
-    }
-    return 0;
-  }
-  
-  function rollDice(numberOfDice, sides) {
-    let total = 0;
-    for (let i = 0; i < numberOfDice; i++) {
-      total += Math.floor(Math.random() * sides) + 1;
-    }
-    return total;
-  }
+        };
+
+        function rollDice(number, sides) {
+          return Array.from({ length: number }, () => Math.ceil(Math.random() * sides)).reduce((a, b) => a + b);
+        }
+      
+        function generateEncounterDistance(terrain) {
+          const generator = terrainDistanceMap[terrain];
+          return generator ? generator() : 0;
+        }
   
   function updateFactions(terrain) {
     const factionsByTerrain = {
@@ -371,16 +368,17 @@ function App() {
   
   function handleSubmit(event) {
     event.preventDefault();
-  
+
     const filteredMonstersByCR = filterMonstersByTerrainAndFaction(monstersByCR, terrain, selectedFaction);
-  
+
     const adjustedXPBudget = getPartyXPThreshold(partySize, partyLevel, difficultyThresholds, difficulty);
     const generatedEncounter = generateEncounter(adjustedXPBudget, challengeRatingList, filteredMonstersByCR);
-  
+
     setEncounterList(generatedEncounter);
+
+    // Set the encounter distance
     setEncounterDistance(generateEncounterDistance(terrain));
   }
-  
   
 
   return (
@@ -454,18 +452,13 @@ function App() {
       </form>
       <h2>Encounter:</h2>
       <ul>
-        {encounterList.map((monster, index) => (
+      {encounterList.map((monster, index) => (
           <li key={index}>
             {monster.name} (CR: {monster.cr})
           </li>
         ))}
       </ul>
-      {encounterList.length > 0 && (
-  <p>
-    Encounter Distance: {encounterDistance} feet
-  </p>
-)}
-
+      <h3>Encounter Distance: {encounterDistance} feet</h3>
     </div>
   );
 }
