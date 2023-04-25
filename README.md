@@ -8,13 +8,12 @@ Encounter generator by zone faction and total party level
 ## To Do List
 - **Basic Filling of the App**
   - Monsters lv 12-25
-  - More Terrain types
+  - More Terrain types (even more)
   - More Factions (in those types and others)
   - Add more Calculation of battlefield- distance per terrain
   - Nice appearance
 - **More complex Improvements**
   - Appropriate treasure based on encounter
-  - Getting Auto-update pipeline to Azure working
 - **Really complex**
   - Pull stats from 5e.tools
   - Drop an actual map out of Stable diffusion
