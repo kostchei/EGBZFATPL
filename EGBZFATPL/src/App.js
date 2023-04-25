@@ -14,13 +14,13 @@ function App() {
   const terrainDistanceMap = {
     desert: () => rollDice(6, 6) * 10,
     arctic: () => rollDice(6, 6) * 10,
-    forest: () => rollDice(2, 8) * 20,
+    forest: () => rollDice(2, 8) * 10,
+    hills:  () => rollDice(2, 10) * 10,
+    mountains: () => rollDice(4, 10) * 10,
+    jungle: () => rollDice(2, 6) * 10,
     // Add more terrain types here
   };
-  
-
-  
-
+   
 
   const difficultyThresholds = [
     { level: 1, easy: 25, medium: 50, hard: 75, deadly: 100 },
@@ -291,7 +291,26 @@ function App() {
         "Primordial",
         "Settled Woodland",
 
-      ]
+      
+    ],
+    hills: [
+      "Kronspire",
+      "Desolate",
+      "Flan",
+
+    ],
+    mountains: [
+      "Hodir Ordning",
+      "Desolate",
+      "Dwarven",
+
+    ],
+    jungle: [
+      "Suleoise",
+      "Primordial",
+      "Karast",
+
+    ]
       // ... (Add faction lists for other terrains and further)
     };
   
@@ -409,6 +428,11 @@ function App() {
             <option value="arctic">Arctic</option>
             <option value="desert">Desert</option>
             <option value="forest">Forest</option>
+            <option value="hills">Forest</option>
+            <option value="mountains">Forest</option>
+            <option value="jungle">Forest</option>
+
+
             {/* Add more terrain options here */}
           </select>
         </label>
