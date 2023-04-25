@@ -328,7 +328,14 @@ function App() {
     return filteredMonstersByCR;
   }
   
-
+  function findHighestCR(xpBudget, challengeRatingList) {
+    for (let i = 0; i < challengeRatingList.length; i++) {
+      if (challengeRatingList[i].xp <= xpBudget) {
+        return challengeRatingList[i].cr;
+      }
+    }
+    return 0;
+  }
 
 
   function generateEncounter(xpBudget, challengeRatingList, filteredMonstersByCR) {
