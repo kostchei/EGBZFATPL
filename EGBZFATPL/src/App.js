@@ -10,6 +10,9 @@ function App() {
   const [factions, setFactions] = useState([]);
   const [selectedFaction, setSelectedFaction] = useState('');
   const [encounterDistance, setEncounterDistance] = useState(0);
+  const sortedChallengeRatingList = challengeRatingList.sort((a, b) => b.xp - a.xp);
+
+
 
   const terrainDistanceMap = {
     desert: () => rollDice(6, 6) * 10,
@@ -97,7 +100,7 @@ function App() {
       { name: "Swearing Dwarf", cr: "1/4", terrain: "mountain", faction: "Dwarven" },
       { name: "Apprentice Wizard", cr: "1/4", terrain: "jungle", faction: "Suleoise" },
       { name: "Dinosaur", cr: "1/4", terrain: "jungle", faction: "Primordial" }, 
-      { name: "Insects  and sweat", cr: "1/4", terrain: "jungle", faction: "Karast" },     
+      { name: "Swarm of Evil bities  and sweat", cr: "1/4", terrain: "jungle", faction: "Karast" },     
     ],
     "1/2": [
       { name: "Shadow", cr: "1/2", terrain: "arctic", faction: "Frostmourne" },
@@ -122,7 +125,7 @@ function App() {
       { name: "Swearing Dwarf", cr: "1/2", terrain: "mountain", faction: "Dwarven" },
       { name: "Apprentice Wizard", cr: "1/2", terrain: "jungle", faction: "Suleoise" },
       { name: "Dinosaur", cr: "1/2", terrain: "jungle", faction: "Primordial" }, 
-      { name: "Insects  and sweat", cr: "1/2", terrain: "jungle", faction: "Karast" },     
+      { name: "Giant Dragonfly", cr: "1/2", terrain: "jungle", faction: "Karast" },     
     ],
     "1": [
       { name: "Snow Maiden", cr: "1", terrain: "arctic", faction: "Frostmourne" },
@@ -463,9 +466,10 @@ function App() {
 
   function generateEncounter(xpBudget, challengeRatingList, filteredMonstersByCR) {
     const encounter = [];
+  
     const addToEncounter = (monster, cr) => {
       encounter.push(monster);
-      xpBudget -= cr;
+      xpBudget -= challengeRatingList.find(crItem => crItem.cr === cr).xp;
     };
   
     while (xpBudget > 0) {
@@ -483,6 +487,7 @@ function App() {
   
     return encounter;
   }
+  
   function getPartyXPThreshold(partySize, partyLevel, difficultyThresholds, difficulty) {
     return (
       difficultyThresholds.find((threshold) => threshold.level === partyLevel)[
