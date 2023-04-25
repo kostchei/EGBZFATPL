@@ -10,9 +10,6 @@ function App() {
   const [factions, setFactions] = useState([]);
   const [selectedFaction, setSelectedFaction] = useState('');
   const [encounterDistance, setEncounterDistance] = useState(0);
-  const sortedChallengeRatingList = challengeRatingList.sort((a, b) => b.xp - a.xp);
-
-
 
   const terrainDistanceMap = {
     desert: () => rollDice(6, 6) * 10,
@@ -21,10 +18,8 @@ function App() {
     hills:  () => rollDice(2, 10) * 10,
     mountains: () => rollDice(4, 10) * 10,
     jungle: () => rollDice(2, 6) * 10,
-    // Add more terrain types here
   };
    
-
   const difficultyThresholds = [
     { level: 1, easy: 25, medium: 50, hard: 75, deadly: 100 },
     { level: 2, easy: 50, medium: 100, hard: 150, deadly: 200 },
@@ -48,8 +43,6 @@ function App() {
     { level: 20, easy: 2800, medium: 5700, hard: 8500, deadly: 12700 },
   ];
   
-
-
   const challengeRatingList = [
     { cr: "1/4", xp: 50 },
     { cr: "1/2", xp: 100 },
@@ -75,7 +68,6 @@ function App() {
     { cr: 20, xp: 25000 },
   ];
   
-
   const monstersByCR = {
     "1/4": [
       { name: "Skeleton", cr: "1/4", terrain: "arctic", faction: "Frostmourne" },
@@ -373,8 +365,6 @@ function App() {
           { name: "Dinosaur", cr: "12", terrain: "jungle", faction: "Primordial" }, 
           { name: "Insects  and sweat", cr: "12", terrain: "jungle", faction: "Karast" },     
           ],
-               
-
         
         };
 
@@ -434,7 +424,7 @@ function App() {
       "Karast",
 
     ]
-      // ... (Add faction lists for other terrains and further)
+
     };
   
     setFactions(factionsByTerrain[terrain] || []);
@@ -454,16 +444,17 @@ function App() {
     return filteredMonstersByCR;
   }
   
-  function findHighestCR(xpBudget, challengeRatingList) {
-    for (let i = 0; i < challengeRatingList.length; i++) {
+  function findHighestCR(xpBudget, challengeRatingList, filteredMonstersByCR) {
+    for (let i = challengeRatingList.length - 1; i >= 0; i--) {
       if (challengeRatingList[i].xp <= xpBudget) {
-        return challengeRatingList[i].cr;
+        if (filteredMonstersByCR[challengeRatingList[i].cr].length > 0) {
+          return challengeRatingList[i].cr;
+        }
       }
     }
     return 0;
   }
-
-
+  
   function generateEncounter(xpBudget, challengeRatingList, filteredMonstersByCR) {
     const encounter = [];
   
@@ -473,13 +464,14 @@ function App() {
     };
   
     while (xpBudget > 0) {
-      const cr = findHighestCR(xpBudget, challengeRatingList);
+      const cr = findHighestCR(xpBudget, challengeRatingList, filteredMonstersByCR);
       const potentialMonsters = filteredMonstersByCR[cr];
   
-      if (potentialMonsters) {
+      if (potentialMonsters && potentialMonsters.length > 0) {
         const randomIndex = Math.floor(Math.random() * potentialMonsters.length);
         const selectedMonster = potentialMonsters[randomIndex];
         addToEncounter(selectedMonster, cr);
+        potentialMonsters.splice(randomIndex, 1); // Remove the selected monster from the list
       } else {
         break;
       }
@@ -487,6 +479,7 @@ function App() {
   
     return encounter;
   }
+  
   
   function getPartyXPThreshold(partySize, partyLevel, difficultyThresholds, difficulty) {
     return (
