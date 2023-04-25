@@ -331,26 +331,21 @@ function App() {
 
 
 
-  function generateEncounter(xpBudget, challengeRatingList, monstersByCR) {
+  function generateEncounter(xpBudget, challengeRatingList, filteredMonstersByCR) {
     const encounter = [];
+    const addToEncounter = (monster, cr) => {
+      encounter.push(monster);
+      xpBudget -= cr;
+    };
   
     while (xpBudget > 0) {
-      const maxAffordableCR = challengeRatingList
-        .slice()
-        .reverse()
-        .find((cr) => cr.xp <= xpBudget);
+      const cr = findHighestCR(xpBudget, challengeRatingList);
+      const potentialMonsters = filteredMonstersByCR[cr];
   
-      if (!maxAffordableCR) {
-        break;
-      }
-  
-      const affordableMonsters = monstersByCR[maxAffordableCR.cr];
-  
-      if (affordableMonsters && affordableMonsters.length > 0) {
-        const randomMonsterIndex = Math.floor(Math.random() * affordableMonsters.length);
-        const selectedMonster = affordableMonsters[randomMonsterIndex];
-        encounter.push(selectedMonster);
-        xpBudget -= maxAffordableCR.xp;
+      if (potentialMonsters) {
+        const randomIndex = Math.floor(Math.random() * potentialMonsters.length);
+        const selectedMonster = potentialMonsters[randomIndex];
+        addToEncounter(selectedMonster, cr);
       } else {
         break;
       }
