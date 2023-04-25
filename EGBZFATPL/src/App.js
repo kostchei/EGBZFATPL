@@ -428,9 +428,9 @@ function App() {
             <option value="arctic">Arctic</option>
             <option value="desert">Desert</option>
             <option value="forest">Forest</option>
-            <option value="hills">Forest</option>
-            <option value="mountains">Forest</option>
-            <option value="jungle">Forest</option>
+            <option value="hills">Hills</option>
+            <option value="mountains">Mountains</option>
+            <option value="jungle">Jungle</option>
 
 
             {/* Add more terrain options here */}
