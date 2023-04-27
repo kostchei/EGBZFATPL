@@ -437,7 +437,7 @@ function App() {
         "Baklunish", 
         "Rary-Bright Empire",
         "Old Sulm", 
-        "Flan",
+        "Tribal",
         "Azak-Zil Demihumans",
         "Elemental Fire",
         "Desert Fauna",
@@ -602,6 +602,7 @@ function App() {
             <option value="hills">Hills</option>
             <option value="mountains">Mountains</option>
             <option value="jungle">Jungle</option>
+            <option value="farmland">Farmland</option>
 
 
             {/* Add more terrain options here */}
