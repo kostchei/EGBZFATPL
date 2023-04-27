@@ -92,7 +92,12 @@ function App() {
       { name: "Swearing Dwarf", cr: "1/4", terrain: "mountain", faction: "Dwarven" },
       { name: "Apprentice Wizard", cr: "1/4", terrain: "jungle", faction: "Suleoise" },
       { name: "Dinosaur", cr: "1/4", terrain: "jungle", faction: "Primordial" }, 
-      { name: "Swarm of Evil bities  and sweat", cr: "1/4", terrain: "jungle", faction: "Karast" },     
+      { name: "Swarm of Evil bities  and sweat", cr: "1/4", terrain: "jungle", faction: "Karast" },  
+      { name: "2 Dwarf Guards", cr: "1/4", terrain: "farmland", faction: "Ulek" },
+      { name: "1d3 Bandits", cr: "1/4", terrain: "farmland", faction: "Borderlands" }, 
+      { name: "1d6 Human Commoners", cr: "1/4", terrain: "farmland", faction: "Flan and Oerdian" },        
+      
+
     ],
     "1/2": [
       { name: "Shadow", cr: "1/2", terrain: "arctic", faction: "Frostmourne" },
@@ -117,7 +122,10 @@ function App() {
       { name: "Swearing Dwarf", cr: "1/2", terrain: "mountain", faction: "Dwarven" },
       { name: "Apprentice Wizard", cr: "1/2", terrain: "jungle", faction: "Suleoise" },
       { name: "Dinosaur", cr: "1/2", terrain: "jungle", faction: "Primordial" }, 
-      { name: "Giant Dragonfly", cr: "1/2", terrain: "jungle", faction: "Karast" },     
+      { name: "Giant Dragonfly", cr: "1/2", terrain: "jungle", faction: "Karast" },  
+      { name: "2 Dwarf Guards", cr: "1/2", terrain: "farmland", faction: "Ulek" },
+      { name: "1d3 Bandits", cr: "1/2", terrain: "farmland", faction: "Borderlands" }, 
+      { name: "1d6 Human Commoners", cr: "1/2", terrain: "farmland", faction: "Flan and Oerdian" },     
     ],
     "1": [
       { name: "Snow Maiden", cr: "1", terrain: "arctic", faction: "Frostmourne" },
@@ -140,7 +148,10 @@ function App() {
       { name: "Swearing Dwarf", cr: "1", terrain: "mountain", faction: "Dwarven" },
       { name: "Apprentice Wizard", cr: "1", terrain: "jungle", faction: "Suleoise" },
       { name: "Dinosaur", cr: "1", terrain: "jungle", faction: "Primordial" }, 
-      { name: "Insects  and sweat", cr: "1", terrain: "jungle", faction: "Karast" },     
+      { name: "Insects  and sweat", cr: "1", terrain: "jungle", faction: "Karast" },   
+      { name: "2 Dwarf Guards", cr: "1", terrain: "farmland", faction: "Ulek" },
+      { name: "1d3 Bandits", cr: "1", terrain: "farmland", faction: "Borderlands" }, 
+      { name: "1d6 Human Commoners", cr: "1", terrain: "farmland", faction: "Flan and Oerdian" },    
       ],
     "2": [
       { name: "Ghast (gheist)", cr: "2", terrain: "arctic", faction: "Frostmourne" },
@@ -167,7 +178,10 @@ function App() {
       { name: "Swearing Dwarf", cr: "2", terrain: "mountain", faction: "Dwarven" },
       { name: "Apprentice Wizard", cr: "2", terrain: "jungle", faction: "Suleoise" },
       { name: "Dinosaur", cr: "2", terrain: "jungle", faction: "Primordial" }, 
-      { name: "Insects  and sweat", cr: "2", terrain: "jungle", faction: "Karast" },     
+      { name: "Insects  and sweat", cr: "2", terrain: "jungle", faction: "Karast" },  
+      { name: "2 Dwarf Guards", cr: "2", terrain: "farmland", faction: "Ulek" },
+      { name: "1d3 Bandits", cr: "2", terrain: "farmland", faction: "Borderlands" }, 
+      { name: "1d6 Human Commoners", cr: "2", terrain: "farmland", faction: "Flan and Oerdian" },     
     ],
     "3": [
       { name: "Wight", cr: "3", terrain: "arctic", faction: "Frostmourne" },
@@ -187,7 +201,10 @@ function App() {
       { name: "Swearing Dwarf", cr: "3", terrain: "mountain", faction: "Dwarven" },
       { name: "Apprentice Wizard", cr: "3", terrain: "jungle", faction: "Suleoise" },
       { name: "Dinosaur", cr: "3", terrain: "jungle", faction: "Primordial" }, 
-      { name: "Insects  and sweat", cr: "3", terrain: "jungle", faction: "Karast" },     
+      { name: "Insects  and sweat", cr: "3", terrain: "jungle", faction: "Karast" },   
+      { name: "2 Dwarf Guards", cr: "3", terrain: "farmland", faction: "Ulek" },
+      { name: "1d3 Bandits", cr: "3", terrain: "farmland", faction: "Borderlands" }, 
+      { name: "1d6 Human Commoners", cr: "3", terrain: "farmland", faction: "Flan and Oerdian" },    
       ],
     "4": [
       { name: "Banshee", cr: "4", terrain: "arctic", faction: "Frostmourne" },
@@ -211,7 +228,10 @@ function App() {
       { name: "Swearing Dwarf", cr: "4", terrain: "mountain", faction: "Dwarven" },
       { name: "Apprentice Wizard", cr: "4", terrain: "jungle", faction: "Suleoise" },
       { name: "Dinosaur", cr: "4", terrain: "jungle", faction: "Primordial" }, 
-      { name: "Insects  and sweat", cr: "4", terrain: "jungle", faction: "Karast" },     
+      { name: "Insects  and sweat", cr: "4", terrain: "jungle", faction: "Karast" },   
+      { name: "2 Dwarf Guards", cr: "4", terrain: "farmland", faction: "Ulek" },
+      { name: "1d3 Bandits", cr: "4", terrain: "farmland", faction: "Borderlands" }, 
+      { name: "1d6 Human Commoners", cr: "4", terrain: "farmland", faction: "Flan and Oerdian" },    
       ],
     "5": [
       { name: "Wraith", cr: "5", terrain: "arctic", faction: "Frostmourne" },
@@ -234,7 +254,10 @@ function App() {
       { name: "Swearing Dwarf", cr: "5", terrain: "mountain", faction: "Dwarven" },
       { name: "Apprentice Wizard", cr: "5", terrain: "jungle", faction: "Suleoise" },
       { name: "Dinosaur", cr: "5", terrain: "jungle", faction: "Primordial" }, 
-      { name: "Insects  and sweat", cr: "5", terrain: "jungle", faction: "Karast" },     
+      { name: "Insects  and sweat", cr: "5", terrain: "jungle", faction: "Karast" },
+      { name: "2 Dwarf Guards", cr: "5", terrain: "farmland", faction: "Ulek" },
+      { name: "1d3 Bandits", cr: "5", terrain: "farmland", faction: "Borderlands" }, 
+      { name: "1d6 Human Commoners", cr: "5", terrain: "farmland", faction: "Flan and Oerdian" },       
       ],
      "6": [
       { name: "Frost Giant Skeleton", cr: "6", terrain: "arctic", faction: "Frostmourne" },
@@ -252,7 +275,10 @@ function App() {
       { name: "Swearing Dwarf", cr: "6", terrain: "mountain", faction: "Dwarven" },
       { name: "Apprentice Wizard", cr: "6", terrain: "jungle", faction: "Suleoise" },
       { name: "Dinosaur", cr: "6", terrain: "jungle", faction: "Primordial" }, 
-      { name: "Insects  and sweat", cr: "6", terrain: "jungle", faction: "Karast" },     
+      { name: "Insects  and sweat", cr: "6", terrain: "jungle", faction: "Karast" },
+      { name: "2 Dwarf Guards", cr: "6", terrain: "farmland", faction: "Ulek" },
+      { name: "1d3 Bandits", cr: "6", terrain: "farmland", faction: "Borderlands" }, 
+      { name: "1d6 Human Commoners", cr: "6", terrain: "farmland", faction: "Flan and Oerdian" },       
       ],
       "7": [
         { name: "Skeletal Knight", cr: "7", terrain: "arctic", faction: "Frostmourne" },
@@ -270,7 +296,10 @@ function App() {
         { name: "Swearing Dwarf", cr: "7", terrain: "mountain", faction: "Dwarven" },
         { name: "Apprentice Wizard", cr: "7", terrain: "jungle", faction: "Suleoise" },
         { name: "Dinosaur", cr: "7", terrain: "jungle", faction: "Primordial" }, 
-        { name: "Insects  and sweat", cr: "7", terrain: "jungle", faction: "Karast" },     
+        { name: "Insects  and sweat", cr: "7", terrain: "jungle", faction: "Karast" }, 
+        { name: "2 Dwarf Guards", cr: "7", terrain: "farmland", faction: "Ulek" },
+        { name: "1d3 Bandits", cr: "7", terrain: "farmland", faction: "Borderlands" }, 
+        { name: "1d6 Human Commoners", cr: "7", terrain: "farmland", faction: "Flan and Oerdian" },      
         ],     
      "8": [
       { name: "Swordwraith Commander", cr: "8", terrain: "arctic", faction: "Frostmourne" },
@@ -288,7 +317,10 @@ function App() {
       { name: "Swearing Dwarf", cr: "8", terrain: "mountain", faction: "Dwarven" },
       { name: "Apprentice Wizard", cr: "8", terrain: "jungle", faction: "Suleoise" },
       { name: "Dinosaur", cr: "8", terrain: "jungle", faction: "Primordial" }, 
-      { name: "Insects  and sweat", cr: "8", terrain: "jungle", faction: "Karast" },     
+      { name: "Insects  and sweat", cr: "8", terrain: "jungle", faction: "Karast" }, 
+      { name: "2 Dwarf Guards", cr: "8", terrain: "farmland", faction: "Ulek" },
+      { name: "1d3 Bandits", cr: "8", terrain: "farmland", faction: "Borderlands" }, 
+      { name: "1d6 Human Commoners", cr: "8", terrain: "farmland", faction: "Flan and Oerdian" },      
       ],
       "9": [
         { name: "Frost Giant Zombie", cr: "9", terrain: "arctic", faction: "Frostmourne" },
@@ -307,15 +339,18 @@ function App() {
         { name: "Swearing Dwarf", cr: "9", terrain: "mountain", faction: "Dwarven" },
         { name: "Apprentice Wizard", cr: "9", terrain: "jungle", faction: "Suleoise" },
         { name: "Dinosaur", cr: "9", terrain: "jungle", faction: "Primordial" }, 
-        { name: "Insects  and sweat", cr: "9", terrain: "jungle", faction: "Karast" },     
+        { name: "Insects  and sweat", cr: "9", terrain: "jungle", faction: "Karast" },
+        { name: "2 Dwarf Guards", cr: "9", terrain: "farmland", faction: "Ulek" },
+        { name: "1d3 Bandits", cr: "9", terrain: "farmland", faction: "Borderlands" }, 
+        { name: "1d6 Human Commoners", cr: "9", terrain: "farmland", faction: "Flan and Oerdian" },       
         ],
-        10: [
-          { name: "Lesser Death Dragon", cr: 10, terrain: "arctic", faction: "Frostmourne" },
-          { name: "Winter Eldarin", cr: 10, terrain: "arctic", faction: "Feyfrost" },
-          { name: "Sunder Shaman", cr: 10, terrain: "arctic", faction: "Hodir Ordning" },
-          { name: "Chardalyn Berserker and 6 Beserkers", cr: 10, terrain: "arctic", faction: "Frost Barbarians" },
-          { name: "Stone Golem", cr: 10, terrain: "arctic", faction: "Snow Barbarians" },
-          { name: "Quaggoth Thonot and 4 Quaggoths", cr: 10, terrain: "arctic", faction: "Indigenous" },
+        "10": [
+          { name: "Lesser Death Dragon", cr: "10", terrain: "arctic", faction: "Frostmourne" },
+          { name: "Winter Eldarin", cr: "10", terrain: "arctic", faction: "Feyfrost" },
+          { name: "Sunder Shaman", cr: "10", terrain: "arctic", faction: "Hodir Ordning" },
+          { name: "Chardalyn Berserker and 6 Beserkers", cr: "10", terrain: "arctic", faction: "Frost Barbarians" },
+          { name: "Stone Golem", cr: "10", terrain: "arctic", faction: "Snow Barbarians" },
+          { name: "Quaggoth Thonot and 4 Quaggoths", cr: "10", terrain: "arctic", faction: "Indigenous" },
           { name: "Monastic High Curator", cr: "10", terrain: "arctic", faction: "Sueloise" },
           { name: "Engineer", cr: "10", terrain: "hills", faction: "Kronspire" },
           { name: "Emptiness", cr: "10", terrain: "hills", faction: "Desolate" },
@@ -325,16 +360,19 @@ function App() {
           { name: "Swearing Dwarf", cr: "10", terrain: "mountain", faction: "Dwarven" },
           { name: "Apprentice Wizard", cr: "10", terrain: "jungle", faction: "Suleoise" },
           { name: "Dinosaur", cr: "10", terrain: "jungle", faction: "Primordial" }, 
-          { name: "Insects  and sweat", cr: "10", terrain: "jungle", faction: "Karast" },     
+          { name: "Insects  and sweat", cr: "10", terrain: "jungle", faction: "Karast" },
+          { name: "2 Dwarf Guards", cr: "10", terrain: "farmland", faction: "Ulek" },
+          { name: "1d3 Bandits", cr: "10", terrain: "farmland", faction: "Borderlands" }, 
+          { name: "1d6 Human Commoners", cr: "10", terrain: "farmland", faction: "Flan and Oerdian" },       
           ],
           
-          11: [
-          { name: "Blackguard on Nightmare", cr: 11, terrain: "arctic", faction: "Frostmourne" },
-          { name: "3 Yeth hounds and a Dragon Hunter", cr: 11, terrain: "arctic", faction: "Feyfrost" },
-          { name: "Spirit Troll", cr: 11, terrain: "arctic", faction: "Hodir Ordning" },
-          { name: "Death Embrace", cr: 11, terrain: "arctic", faction: "Frost Barbarians" },
-          { name: "Behir", cr: 11, terrain: "arctic", faction: "Snow Barbarians" },
-          { name: "Remorhaz", cr: 11, terrain: "arctic", faction: "Indigenous" },
+          "11": [
+          { name: "Blackguard on Nightmare", cr: "11", terrain: "arctic", faction: "Frostmourne" },
+          { name: "3 Yeth hounds and a Dragon Hunter", cr: "11", terrain: "arctic", faction: "Feyfrost" },
+          { name: "Spirit Troll", cr: "11", terrain: "arctic", faction: "Hodir Ordning" },
+          { name: "Death Embrace", cr: "11", terrain: "arctic", faction: "Frost Barbarians" },
+          { name: "Behir", cr: "11", terrain: "arctic", faction: "Snow Barbarians" },
+          { name: "Remorhaz", cr: "11", terrain: "arctic", faction: "Indigenous" },
           { name: "2 Monastic Infiltrators", cr: "11", terrain: "arctic", faction: "Sueloise" },
           { name: "Engineer", cr: "11", terrain: "hills", faction: "Kronspire" },
           { name: "Emptiness", cr: "11", terrain: "hills", faction: "Desolate" },
@@ -344,16 +382,19 @@ function App() {
           { name: "Swearing Dwarf", cr: "11", terrain: "mountain", faction: "Dwarven" },
           { name: "Apprentice Wizard", cr: "11", terrain: "jungle", faction: "Suleoise" },
           { name: "Dinosaur", cr: "11", terrain: "jungle", faction: "Primordial" }, 
-          { name: "Insects  and sweat", cr: "11", terrain: "jungle", faction: "Karast" },     
+          { name: "Insects  and sweat", cr: "11", terrain: "jungle", faction: "Karast" }, 
+          { name: "2 Dwarf Guards", cr: "11", terrain: "farmland", faction: "Ulek" },
+          { name: "1d3 Bandits", cr: "11", terrain: "farmland", faction: "Borderlands" }, 
+          { name: "1d6 Human Commoners", cr: "11", terrain: "farmland", faction: "Flan and Oerdian" },      
           ],
           
-          12: [
-          { name: "Boneclaw", cr: 12, terrain: "arctic", faction: "Frostmourne" },
-          { name: "Sea Fury", cr: 12, terrain: "arctic", faction: "Feyfrost" },
-          { name: "Frost Giant Everlasting One", cr: 12, terrain: "arctic", faction: "Hodir Ordning" },
-          { name: "Warlord", cr: 12, terrain: "arctic", faction: "Frost Barbarians" },
-          { name: "ArchDruid", cr: 12, terrain: "arctic", faction: "Snow Barbarians" },
-          { name: "6 Yeti", cr: 12, terrain: "arctic", faction: "Indigenous" },
+          "12": [
+          { name: "Boneclaw", cr: "12", terrain: "arctic", faction: "Frostmourne" },
+          { name: "Sea Fury", cr: "12", terrain: "arctic", faction: "Feyfrost" },
+          { name: "Frost Giant Everlasting One", cr: "12", terrain: "arctic", faction: "Hodir Ordning" },
+          { name: "Warlord", cr: "12", terrain: "arctic", faction: "Frost Barbarians" },
+          { name: "ArchDruid", cr: "12", terrain: "arctic", faction: "Snow Barbarians" },
+          { name: "6 Yeti", cr: "12", terrain: "arctic", faction: "Indigenous" },
           { name: "ArchMage", cr: "12", terrain: "arctic", faction: "Sueloise" },
           { name: "Engineer", cr: "12", terrain: "hills", faction: "Kronspire" },
           { name: "Emptiness", cr: "12", terrain: "hills", faction: "Desolate" },
@@ -363,7 +404,11 @@ function App() {
           { name: "Swearing Dwarf", cr: "12", terrain: "mountain", faction: "Dwarven" },
           { name: "Apprentice Wizard", cr: "12", terrain: "jungle", faction: "Suleoise" },
           { name: "Dinosaur", cr: "12", terrain: "jungle", faction: "Primordial" }, 
-          { name: "Insects  and sweat", cr: "12", terrain: "jungle", faction: "Karast" },     
+          { name: "Insects  and sweat", cr: "12", terrain: "jungle", faction: "Karast" }, 
+          { name: "2 Dwarf Guards", cr: "12", terrain: "farmland", faction: "Ulek" },
+          { name: "1d3 Bandits", cr: "12", terrain: "farmland", faction: "Borderlands" }, 
+          { name: "1d6 Human Commoners", cr: "12", terrain: "farmland", faction: "Flan and Oerdian" },   
+
           ],
         
         };
@@ -423,8 +468,13 @@ function App() {
       "Primordial",
       "Karast",
 
-    ]
+    ],
+    farmland: [
+      "Ulek", // lots of demihumans, dwarves, halflings, gnomes, elves
+      "Borderlands", // lots of bandits, more wolves , adventurers and raiders
+      "Flan and Oerdian", //mostly human lands with central figures, majors etc
 
+    ]
     };
   
     setFactions(factionsByTerrain[terrain] || []);
