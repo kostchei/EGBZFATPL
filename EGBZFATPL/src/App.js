@@ -409,7 +409,49 @@ function App() {
           { name: "1d3 Bandits", cr: "12", terrain: "farmland", faction: "Borderlands" }, 
           { name: "1d6 Human Commoners", cr: "12", terrain: "farmland", faction: "Flan and Oerdian" },   
 
-          ],
+        ],
+          
+        "13": [
+        { name: "Vampire", cr: "13", terrain: "arctic", faction: "Frostmourne" },
+
+
+      ],
+          
+      "14": [
+      { name: "Greater Death Dragon", cr: "14", terrain: "arctic", faction: "Frostmourne" },
+
+    ],
+          
+    "15": [
+    { name: "Skull Lord", cr: "15", terrain: "arctic", faction: "Frostmourne" },
+
+  ],
+          
+  "16": [
+  { name: "Storm Giant Skeleton", cr: "16", terrain: "arctic", faction: "Frostmourne" },
+
+],
+          
+"17": [
+{ name: "Death Knight", cr: "17", terrain: "arctic", faction: "Frostmourne" },
+
+],
+"18": [
+  { name: "Demilich", cr: "18", terrain: "arctic", faction: "Frostmourne" },
+  
+],
+"19": [
+  { name: "Lord Soth", cr: "19", terrain: "arctic", faction: "Frostmourne" },
+  
+],
+"20": [
+  { name: "Nightwalker", cr: "20", terrain: "arctic", faction: "Frostmourne" },
+  
+
+        ],
+          
+
+
         
         };
 
@@ -513,22 +555,95 @@ function App() {
       xpBudget -= challengeRatingList.find(crItem => crItem.cr === cr).xp;
     };
   
-    while (xpBudget > 0) {
-      const cr = findHighestCR(xpBudget, challengeRatingList, filteredMonstersByCR);
-      const potentialMonsters = filteredMonstersByCR[cr];
+    let method;
   
-      if (potentialMonsters && potentialMonsters.length > 0) {
-        const randomIndex = Math.floor(Math.random() * potentialMonsters.length);
-        const selectedMonster = potentialMonsters[randomIndex];
-        addToEncounter(selectedMonster, cr);
-        potentialMonsters.splice(randomIndex, 1); // Remove the selected monster from the list
-      } else {
+// Determine the encounter generation method based on the xp budget and probabilities
+if (xpBudget >= 3000 && Math.random() < 0.25) {
+  // Method 4: Fifteen monsters each worth up to or equal to 1/60 of the xp budget
+  method = 4;
+} else if (xpBudget >= 600 && Math.random() < 0.5) {
+  // Method 3: Six monsters each worth up to or equal to 1/12 of the xp budget
+  method = 3;
+} else if (xpBudget >= 100 && Math.random() < 0.75) {
+  // Method 2: A pair of monsters, each worth up to or equal to 1/3 of the xp budget
+  method = 2;
+} else {
+  // Method 1: A big monster, sometimes with other smaller ones up to or equal the xp budget
+  method = 1;
+}
+  
+    switch (method) {
+      case 1:
+        // Method 1: A big monster, sometimes with other smaller ones up to or equal the xp budget
+        const cr = findHighestCR(xpBudget, challengeRatingList, filteredMonstersByCR);
+        const potentialMonsters = filteredMonstersByCR[cr];
+  
+        if (potentialMonsters && potentialMonsters.length > 0) {
+          const randomIndex = Math.floor(Math.random() * potentialMonsters.length);
+          const selectedMonster = potentialMonsters[randomIndex];
+          addToEncounter(selectedMonster, cr);
+          xpBudget *= Math.random() * 0.5 + 0.5; // Reduce the xp budget by 50-100%
+        }
         break;
-      }
+      case 2:
+        // Method 2: A pair of monsters, each worth up to or equal to 1/3 of the xp budget
+        const pairBudget = xpBudget / 3;
+  
+        if (pairBudget > 0) {
+          for (let i = 0; i < 2; i++) {
+            const cr = findHighestCR(pairBudget, challengeRatingList, filteredMonstersByCR);
+            const potentialMonsters = filteredMonstersByCR[cr];
+  
+            if (potentialMonsters && potentialMonsters.length > 0) {
+              const randomIndex = Math.floor(Math.random() * potentialMonsters.length);
+              const selectedMonster = potentialMonsters[randomIndex];
+              addToEncounter(selectedMonster, cr);
+            }
+          }
+        }
+        break;
+      case 3:
+        // Method 3: Six monsters each worth up to or equal to 1/12 of the xp budget
+        const minionBudget = xpBudget / 12;
+  
+        if (minionBudget > 0) {
+          for (let i = 0; i < 6; i++) {
+            const cr = findHighestCR(minionBudget, challengeRatingList, filteredMonstersByCR);
+            const potentialMonsters = filteredMonstersByCR[cr];
+  
+            if (potentialMonsters && potentialMonsters.length > 0) {
+              const randomIndex = Math.floor(Math.random() * potentialMonsters.length);
+              const selectedMonster = potentialMonsters[randomIndex];
+              addToEncounter(selectedMonster, cr);
+            }
+          }
+        }
+        break;
+  
+      case 4:
+        // Method 4: Fifteen monsters each worth up to or equal to 1/60 of the xp budget
+        const swarmBudget = xpBudget / 60;
+  
+        if (swarmBudget > 0) {
+          for (let i = 0; i < 15; i++) {
+            const cr = findHighestCR(swarmBudget, challengeRatingList, filteredMonstersByCR);
+            const potentialMonsters = filteredMonstersByCR[cr];
+  
+            if (potentialMonsters && potentialMonsters.length > 0) {
+              const randomIndex = Math.floor(Math.random() * potentialMonsters.length);
+              const selectedMonster = potentialMonsters[randomIndex];
+              addToEncounter(selectedMonster, cr);
+            }
+          }
+        }
+        break;
+  default:
+        break;
     }
   
     return encounter;
   }
+  
   
   
   function getPartyXPThreshold(partySize, partyLevel, difficultyThresholds, difficulty) {
