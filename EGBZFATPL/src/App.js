@@ -529,7 +529,7 @@ function App() {
   
     for (const cr in monstersByCR) {
       filteredMonstersByCR[cr] = monstersByCR[cr].filter(
-        (monster) => monster.terrain === terrain && (monster.faction === faction || Math.random() > 0.5)
+        (monster) => monster.terrain === terrain && (monster.faction === faction || Math.random() > 0.1)
       );
     }
   
