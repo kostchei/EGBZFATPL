@@ -71,6 +71,8 @@ function App() {
   const monstersByCR = {
     "1/4": [
       { name: "Skeleton", cr: "1/4", terrain: "arctic", faction: "Frostmourne" },
+      { name: "Dwarf Scout", cr: "1/4", terrain: "arctic", faction: "Calanthian Frozen North" },
+      { name: "Ice Snake", cr: "1/4", terrain: "arctic", faction: "Calanthian Frozen North" },
       { name: "Winter Sprite", cr: "1/4", terrain: "arctic", faction: "Feyfrost" },
       { name: "Mountain Goat Buck and Nannie", cr: "1/4", terrain: "arctic", faction: "Hodir Ordning" },
       { name: "Anarch", cr: "1/4", terrain: "arctic", faction: "Frost Barbarians" },
@@ -101,6 +103,11 @@ function App() {
     ],
     "1/2": [
       { name: "Shadow", cr: "1/2", terrain: "arctic", faction: "Frostmourne" },
+      { name: "Dwarf Soldier", cr: "1/2", terrain: "arctic", faction: "Calanthian Frozen North" },
+      { name: "Ice Mephit", cr: "1/2", terrain: "arctic", faction: "Calanthian Frozen North" },
+      { name: "Magmin", cr: "1/2", terrain: "arctic", faction: "Calanthian Frozen North" },
+      { name: "Arctic Constrictor Snake", cr: "1/2", terrain: "arctic", faction: "Calanthian Frozen North" },
+      { name: "Ambush Drake", cr: "1/2", terrain: "arctic", faction: "Calanthian Frozen North" },    
       { name: "Valenar Steed", cr: "1/2", terrain: "arctic", faction: "Feyfrost" },
       { name: "Young Hill Giant", cr: "1/2", terrain: "arctic", faction: "Hodir Ordning" },
       { name: "Soldier", cr: "1/2", terrain: "arctic", faction: "Frost Barbarians" },
@@ -130,6 +137,7 @@ function App() {
     "1": [
       { name: "Snow Maiden", cr: "1", terrain: "arctic", faction: "Frostmourne" },
       { name: "Dread Warrior", cr: "1", terrain: "arctic", faction: "Frostmourne" },
+      { name: "Duergar", cr: "1", terrain: "arctic", faction: "Calanthian Frozen North" },
       { name: "Specter", cr: "1", terrain: "arctic", faction: "Frostmourne" },
       { name: "Returned Sentry", cr: "1", terrain: "arctic", faction: "Frostmourne" },
       { name: "Quickling", cr: "1", terrain: "arctic", faction: "Feyfrost" },
@@ -155,6 +163,10 @@ function App() {
       ],
     "2": [
       { name: "Ghast (gheist)", cr: "2", terrain: "arctic", faction: "Frostmourne" },
+      { name: "Azer", cr: "2", terrain: "arctic", faction: "Calanthian Frozen North" },
+      { name: "White Dragon Wyrmling", cr: "2", terrain: "arctic", faction: "Calanthian Frozen North" },
+      { name: "Purple Wormling", cr: "2", terrain: "arctic", faction: "Calanthian Frozen North" },
+      { name: "White Guard Drake", cr: "2", terrain: "arctic", faction: "Calanthian Frozen North" },    
       { name: "Will-o-Wisp", cr: "2", terrain: "arctic", faction: "Frostmourne" },
       { name: "Undying Soldier", cr: "2", terrain: "arctic", faction: "Frostmourne" },
       { name: "Ice Nymph", cr: "2", terrain: "arctic", faction: "Feyfrost" },
@@ -208,6 +220,7 @@ function App() {
       ],
     "4": [
       { name: "Banshee", cr: "4", terrain: "arctic", faction: "Frostmourne" },
+      { name: "Duergar Stone Guard", cr: "4", terrain: "arctic", faction: "Calanthian Frozen North" },
       { name: "Deathlock", cr: "4", terrain: "arctic", faction: "Frostmourne" },
       { name: "Soul shaker", cr: "4", terrain: "arctic", faction: "Frostmourne" },
       { name: "Ghost", cr: "4", terrain: "arctic", faction: "Frostmourne" },
@@ -235,6 +248,9 @@ function App() {
       ],
     "5": [
       { name: "Wraith", cr: "5", terrain: "arctic", faction: "Frostmourne" },
+      { name: "Fire Elemental", cr: "5", terrain: "arctic", faction: "Calanthian Frozen North" },
+      { name: "Water Elemental", cr: "5", terrain: "arctic", faction: "Calanthian Frozen North" },
+      { name: "Young Remorhaz", cr: "5", terrain: "arctic", faction: "Calanthian Frozen North" },
       { name: "Knight of the Order", cr: "5", terrain: "arctic", faction: "Frostmourne" },
       { name: "Woodwoad", cr: "5", terrain: "arctic", faction: "Feyfrost" },
       { name: "Harpy Matriarch", cr: "5", terrain: "arctic", faction: "Feyfrost" },
@@ -262,6 +278,7 @@ function App() {
      "6": [
       { name: "Frost Giant Skeleton", cr: "6", terrain: "arctic", faction: "Frostmourne" },
       { name: "Annis Hag", cr: "6", terrain: "arctic", faction: "Feyfrost" },
+      { name: "Young White Dragon", cr: "6", terrain: "arctic", faction: "Calanthian Frozen North" },
       { name: "Cyclops", cr: "6", terrain: "arctic", faction: "Hodir Ordning" },
       { name: "3 Berserkers", cr: "6", terrain: "arctic", faction: "Frost Barbarians" },
       { name: "Young White Dragon", cr: "6", terrain: "arctic", faction: "Snow Barbarians" },
@@ -278,7 +295,10 @@ function App() {
       { name: "Insects  and sweat", cr: "6", terrain: "jungle", faction: "Karast" },
       { name: "2 Dwarf Guards", cr: "6", terrain: "farmland", faction: "Ulek" },
       { name: "1d3 Bandits", cr: "6", terrain: "farmland", faction: "Borderlands" }, 
-      { name: "1d6 Human Commoners", cr: "6", terrain: "farmland", faction: "Flan and Oerdian" },       
+      { name: "1d6 Human Commoners", cr: "6", terrain: "farmland", faction: "Flan and Oerdian" },    
+      { name: "Galeb Duhr", cr: "6", terrain: "arctic", faction: "Calanthian Frozen North" },
+      { name: "Duergar Warlord", cr: "6", terrain: "arctic", faction: "Calanthian Frozen North" },
+      { name: "Duergar Xarrorn", cr: "6", terrain: "arctic", faction: "Calanthian Frozen North" },   
       ],
       "7": [
         { name: "Skeletal Knight", cr: "7", terrain: "arctic", faction: "Frostmourne" },
@@ -325,6 +345,7 @@ function App() {
       "9": [
         { name: "Frost Giant Zombie", cr: "9", terrain: "arctic", faction: "Frostmourne" },
         { name: "Conclave Dryad", cr: "9", terrain: "arctic", faction: "Feyfrost" },
+        { name: "Frost Salamander", cr: "9", terrain: "arctic", faction: "Calanthian Frozen North" },
         { name: "Cloud Giant", cr: "9", terrain: "arctic", faction: "Hodir Ordning" },
         { name: "Fire Giant", cr: "9", terrain: "arctic", faction: "Hodir Ordning" },
         { name: "Warpriest", cr: "9", terrain: "arctic", faction: "Frost Barbarians" },
@@ -368,6 +389,7 @@ function App() {
           
           "11": [
           { name: "Blackguard on Nightmare", cr: "11", terrain: "arctic", faction: "Frostmourne" },
+          { name: "Adult Remorhaz", cr: "11", terrain: "arctic", faction: "Calanthian Frozen North" },
           { name: "3 Yeth hounds and a Dragon Hunter", cr: "11", terrain: "arctic", faction: "Feyfrost" },
           { name: "Spirit Troll", cr: "11", terrain: "arctic", faction: "Hodir Ordning" },
           { name: "Death Embrace", cr: "11", terrain: "arctic", faction: "Frost Barbarians" },
@@ -413,6 +435,9 @@ function App() {
           
         "13": [
         { name: "Vampire", cr: "13", terrain: "arctic", faction: "Frostmourne" },
+        { name: "Adult White Dragon", cr: "13", terrain: "arctic", faction: "Calanthian Frozen North" },
+        { name: "Young Purple Worm", cr: "13", terrain: "arctic", faction: "Calanthian Frozen North" },
+      
 
 
       ],
@@ -424,6 +449,7 @@ function App() {
           
     "15": [
     { name: "Skull Lord", cr: "15", terrain: "arctic", faction: "Frostmourne" },
+    { name: "Frost Purple Worm", cr: "15", terrain: "arctic", faction: "Calanthian Frozen North" },
 
   ],
           
@@ -434,6 +460,7 @@ function App() {
           
 "17": [
 { name: "Death Knight", cr: "17", terrain: "arctic", faction: "Frostmourne" },
+{ name: "Frost Worm", cr: "17", terrain: "arctic", faction: "Calanthian Frozen North" },
 
 ],
 "18": [
@@ -446,6 +473,7 @@ function App() {
 ],
 "20": [
   { name: "Nightwalker", cr: "20", terrain: "arctic", faction: "Frostmourne" },
+  { name: "Ancient White Dragon", cr: "20", terrain: "arctic", faction: "Calanthian Frozen North" },
   
 
         ],
@@ -467,6 +495,7 @@ function App() {
   function updateFactions(terrain) {
     const factionsByTerrain = {
       arctic: [
+        "Calanthian Frozen North",
         "Frostmourne",
         "Feyfrost",
         "Hodir Ordning",
