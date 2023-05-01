@@ -62,12 +62,12 @@ function App() {   //constants go here
     { name: "Medium intermittent cover - ice formations, medium size trees etc, ¾ cover", heightModifier: 0.2 },
     { name: "Ridgeline - assumes above you unless you are on it, across your path", heightModifier: 0.5 },
     { name: "Ridgeline - assumes above you unless you are on it, parallel to your path", heightModifier: 0.5 },
-    { name: "Gully - assumes below you unless you are on it, across your path", heightModifier: -0.4 },
-    { name: "Gully - assumes below you unless you are on it, parallel to your path", heightModifier: -0.4  },
-    { name: "River or water course, parallel to your path", heightModifier: -0.2 },
-    { name: "River or water course, across your path", heightModifier: -0.2  },
-    { name: "Slippery surface - ice, wet rock, fallen trees, wet grass, loose shale", heightModifier: 0  },
-    { name: "Very Soft ground - snow drifts, mud, floating plants, soft fine sand", heightModifier: 0 },
+    { name: "Gully - assumes below you unless you are on it, across your path", heightModifier: -0.3 },
+    { name: "Gully - assumes below you unless you are on it, parallel to your path", heightModifier: -0.3  },
+    { name: "River or water course, parallel to your path", heightModifier: -0.1 },
+    { name: "River or water course, across your path", heightModifier: -0.1  },
+    { name: "Slippery surface - ice, wet rock, fallen trees, wet grass, loose shale"  },
+    { name: "Very Soft ground - snow drifts, mud, floating plants, soft fine sand" },
     { name: "Bridge, rail or guided path, no cover except prone", heightModifier: 0.1  },
     { name: "Ruin ¾ cover, no roof", areaModifier: 0.5, heightModifier: 0.3  },
     { name: "Building full cover, roof", areaModifier: 0.5, heightModifier: 0.2  },
@@ -574,7 +574,7 @@ function App() {   //constants go here
       area *= randomFeature.areaModifier;
     }
   
-    const heightModifier = randomFeature.heightModifier || 1; // Use heightModifier from the feature or default to 1
+    const heightModifier = randomFeature.heightModifier || 0; // Use heightModifier from the feature or default to 1
     const heightFraction = Math.random() * 0.9 + 0.1;
     const height = encounterDistance * heightFraction * heightModifier;
   
