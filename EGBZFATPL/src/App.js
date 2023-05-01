@@ -49,28 +49,29 @@ function App() {   //constants go here
     { level: 20, easy: 2800, medium: 5700, hard: 8500, deadly: 12700 },
   ];
   const featuresList = [
-    { name: "Crevasse, rock, ice or lava - across or parallel" },
-    { name: "Cave or sinkhole: rock, ice or lava" },
-    { name: "Steep slope up - moderate athletics or treat as difficult (or ½ move), easy athletics or acrobatics to go down (or ½ move)" },
-    { name: "Steep slope down - easy athletics or acrobatics to go down (or ½ move), moderate athletics or treat as difficult to go up (or ½ move)" },
-    { name: "Peak" },
-    { name: "Cliff up or down - climb DC 10, but half speed. Height 10-200 feet, assumes across line of travel" },
-    { name: "Boulders or other broken ground" },
-    { name: "Light Foliage - bushes, heather or saplings" },
-    { name: "Snow or sand dunes or hillocks or dense thick trees (full cover)" },
-    { name: "Medium intermittent cover - ice formations, medium size trees etc, ¾ cover" },
-    { name: "Ridgeline - assumes above you unless you are on it, across your path" },
-    { name: "Ridgeline - assumes above you unless you are on it, parallel to your path" },
-    { name: "Gully - assumes below you unless you are on it, across your path" },
-    { name: "Gully - assumes below you unless you are on it, parallel to your path" },
-    { name: "River or water course, parallel to your path" },
-    { name: "River or water course" },
-    { name: "Slippery surface - ice, wet rock, fallen trees, wet grass, loose shale" },
-    { name: "Very Soft ground - snow drifts, mud, floating plants, soft fine sand" },
-    { name: "Bridge, rail or guided path, no cover except prone" },
-    { name: "Ruin ¾ cover, no roof", areaModifier: 0.5 },
-    { name: "Building full cover, roof", areaModifier: 0.5 },
-    { name: "Monument, way marker, shrine, well or cache ¾ cover", areaModifier: 0.1 },
+    { name: "Crevasse, rock, ice or lava - across or parallel, height is depth", heightModifier: -1  },
+    { name: "Cave or sinkhole: rock, ice or lava", heightModifier: -1 },
+    { name: "Steep slope up - moderate athletics or treat as difficult (or ½ move), easy athletics or acrobatics to go down (or ½ move)", heightModifier: 0.5 },
+    { name: "Steep slope down - easy athletics or acrobatics to go down (or ½ move), moderate athletics or treat as difficult to go up (or ½ move)", heightModifier: -0.5 },
+    { name: "Peak", heightModifier: 1 },
+    { name: "Cliff up - climb DC 10, but half speed, across line of travel", heightModifier: 1 },
+    { name: "Cliff down - climb DC 10, but half speed, across line of travel", heightModifier: -1 },
+    { name: "Boulders or other broken ground", heightModifier: 0.2 },
+    { name: "Light Foliage - bushes, heather or saplings", heightModifier: 0.1 },
+    { name: "Snow or sand dunes or hillocks or dense thick trees (full cover)", heightModifier: 0.4 },
+    { name: "Medium intermittent cover - ice formations, medium size trees etc, ¾ cover", heightModifier: 0.2 },
+    { name: "Ridgeline - assumes above you unless you are on it, across your path", heightModifier: 0.5 },
+    { name: "Ridgeline - assumes above you unless you are on it, parallel to your path", heightModifier: 0.5 },
+    { name: "Gully - assumes below you unless you are on it, across your path", heightModifier: -0.4 },
+    { name: "Gully - assumes below you unless you are on it, parallel to your path", heightModifier: -0.4  },
+    { name: "River or water course, parallel to your path", heightModifier: -0.2 },
+    { name: "River or water course, across your path", heightModifier: -0.2  },
+    { name: "Slippery surface - ice, wet rock, fallen trees, wet grass, loose shale", heightModifier: 0  },
+    { name: "Very Soft ground - snow drifts, mud, floating plants, soft fine sand", heightModifier: 0 },
+    { name: "Bridge, rail or guided path, no cover except prone", heightModifier: 0.1  },
+    { name: "Ruin ¾ cover, no roof", areaModifier: 0.5, heightModifier: 0.3  },
+    { name: "Building full cover, roof", areaModifier: 0.5, heightModifier: 0.2  },
+    { name: "Monument, way marker, shrine, well or cache ¾ cover", areaModifier: 0.1, heightModifier: 0.1 },
   ];
   
   const challengeRatingList = [
@@ -573,12 +574,19 @@ function App() {   //constants go here
       area *= randomFeature.areaModifier;
     }
   
+    const heightModifier = randomFeature.heightModifier || 1; // Use heightModifier from the feature or default to 1
+    const heightFraction = Math.random() * 0.9 + 0.1;
+    const height = encounterDistance * heightFraction * heightModifier;
+  
     return {
       ...randomFeature,
       distance: Math.round(distance),
       area: Math.round(area),
+      height: Math.round(height),
     };
   }
+  
+
   
 
         function rollDice(number, sides) {
@@ -929,10 +937,10 @@ if (xpBudget >= 3000 && Math.random() < 0.25) {
       <h3>Light Level: {lightLevel}</h3>
       <h2>Generated Features:</h2>
     <ul>
-      {generatedFeatures.map((feature, index) => (
-        <li key={index}>
-          {feature.name} (Distance: {feature.distance} feet, Area: {feature.area} feet)
-        </li>
+    {generatedFeatures.map((feature, index) => (
+      <li key={index}>
+        {feature.name} (Distance: {feature.distance} feet, Area: {feature.area} feet, Height: {feature.height} feet)
+      </li>
       ))}
     </ul>
     </div>
