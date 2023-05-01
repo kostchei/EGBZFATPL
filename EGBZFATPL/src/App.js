@@ -15,6 +15,8 @@ function App() {   //constants go here
   const [lightLevel, setLightLevel] = useState('');
   const [generatedFeatures, setGeneratedFeatures] = useState([]);
 
+  
+
   const terrainDistanceMap = {
     desert: () => rollDice(6, 6) * 10,
     arctic: () => rollDice(6, 6) * 10,
@@ -823,7 +825,9 @@ if (xpBudget >= 3000 && Math.random() < 0.25) {
     setEncounterList(generatedEncounter);
   
     // Set the encounter distance
-    setEncounterDistance(generateEncounterDistance(terrain));
+    const encounterDist = generateEncounterDistance(terrain);
+    setEncounterDistance(encounterDist);
+    console.log(encounterDist); // Add this line to debug the value of encounterDist
     // Set the environmental effects
     setWind(generateWind());
     setPrecipitation(generatePrecipitation());
