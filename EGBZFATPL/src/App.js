@@ -823,24 +823,25 @@ if (xpBudget >= 3000 && Math.random() < 0.25) {
     const generatedEncounter = generateEncounter(adjustedXPBudget, challengeRatingList, filteredMonstersByCR);
   
     setEncounterList(generatedEncounter);
-  
+     // Set the environmental effects
+     setWind(generateWind());
+     setPrecipitation(generatePrecipitation());
+     setLightLevel(generateLightLevel());
+    
     // Set the encounter distance
-    const encounterDist = generateEncounterDistance(terrain);
-    setEncounterDistance(encounterDist);
-    console.log(encounterDist); // Add this line to debug the value of encounterDist
-    // Set the environmental effects
-    setWind(generateWind());
-    setPrecipitation(generatePrecipitation());
-    setLightLevel(generateLightLevel());
+    const generatedEncounterDistance = generateEncounterDistance(terrain);
+    setEncounterDistance(generatedEncounterDistance);
+
+    if (generatedEncounterDistance > 0) {
+      // Generate and set features
+      const newFeatures = [
+        generateRandomFeature(generatedEncounterDistance),
+        generateRandomFeature(generatedEncounterDistance),
+        generateRandomFeature(generatedEncounterDistance),
+      ];
   
-    // Generate and set features
-    const newFeatures = [
-      generateRandomFeature(),
-      generateRandomFeature(),
-      generateRandomFeature(),
-    ];
-  
-    setGeneratedFeatures(newFeatures);
+      setGeneratedFeatures(newFeatures);
+    }
   }
    
 
