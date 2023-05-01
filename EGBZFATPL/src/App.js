@@ -13,6 +13,7 @@ function App() {   //constants go here
   const [wind, setWind] = useState('');
   const [precipitation, setPrecipitation] = useState('');
   const [lightLevel, setLightLevel] = useState('');
+  const [generatedFeatures, setGeneratedFeatures] = useState([]);
 
   const terrainDistanceMap = {
     desert: () => rollDice(6, 6) * 10,
@@ -44,6 +45,30 @@ function App() {   //constants go here
     { level: 18, easy: 2100, medium: 4200, hard: 6300, deadly: 9500 },
     { level: 19, easy: 2400, medium: 4900, hard: 7300, deadly: 10900 },
     { level: 20, easy: 2800, medium: 5700, hard: 8500, deadly: 12700 },
+  ];
+  const featuresList = [
+    { name: "Crevasse, rock, ice or lava - across or parallel" },
+    { name: "Cave or sinkhole: rock, ice or lava" },
+    { name: "Steep slope up - moderate athletics or treat as difficult (or ½ move), easy athletics or acrobatics to go down (or ½ move)" },
+    { name: "Steep slope down - easy athletics or acrobatics to go down (or ½ move), moderate athletics or treat as difficult to go up (or ½ move)" },
+    { name: "Peak" },
+    { name: "Cliff up or down - climb DC 10, but half speed. Height 10-200 feet, assumes across line of travel" },
+    { name: "Boulders or other broken ground" },
+    { name: "Light Foliage - bushes, heather or saplings" },
+    { name: "Snow or sand dunes or hillocks or dense thick trees (full cover)" },
+    { name: "Medium intermittent cover - ice formations, medium size trees etc, ¾ cover" },
+    { name: "Ridgeline - assumes above you unless you are on it, across your path" },
+    { name: "Ridgeline - assumes above you unless you are on it, parallel to your path" },
+    { name: "Gully - assumes below you unless you are on it, across your path" },
+    { name: "Gully - assumes below you unless you are on it, parallel to your path" },
+    { name: "River or water course, parallel to your path" },
+    { name: "River or water course" },
+    { name: "Slippery surface - ice, wet rock, fallen trees, wet grass, loose shale" },
+    { name: "Very Soft ground - snow drifts, mud, floating plants, soft fine sand" },
+    { name: "Bridge, rail or guided path, no cover except prone" },
+    { name: "Ruin ¾ cover, no roof", areaModifier: 0.5 },
+    { name: "Building full cover, roof", areaModifier: 0.5 },
+    { name: "Monument, way marker, shrine, well or cache ¾ cover", areaModifier: 0.1 },
   ];
   
   const challengeRatingList = [
@@ -532,11 +557,27 @@ function App() {   //constants go here
 "20": [
   { name: "Nightwalker", cr: "20", terrain: "arctic", faction: "Frostmourne" },
   { name: "Ancient White Dragon", cr: "20", terrain: "arctic", faction: "Calanthian Frozen North" },
+ ],
+   };
+
+   function generateRandomFeature(encounterDistance) {
+    const randomFeature = featuresList[Math.floor(Math.random() * featuresList.length)];
+    const distanceModifier = Math.random() * 2 - 0.5;
+    const distance = encounterDistance * distanceModifier;
   
-        ],
-          
-      
-        };
+    const sizeModifier = Math.random() * 1.95 + 0.05;
+    let area = encounterDistance * sizeModifier;
+    if (randomFeature.areaModifier) {
+      area *= randomFeature.areaModifier;
+    }
+  
+    return {
+      ...randomFeature,
+      distance: Math.round(distance),
+      area: Math.round(area),
+    };
+  }
+  
 
         function rollDice(number, sides) {
           return Array.from({ length: number }, () => Math.ceil(Math.random() * sides)).reduce((a, b) => a + b);
@@ -771,24 +812,33 @@ if (xpBudget >= 3000 && Math.random() < 0.25) {
     );
   }
   
-  function handleSubmit(event) {  //all the handlesumbit stuff here
+  function handleSubmit(event) {
     event.preventDefault();
-
+  
     const filteredMonstersByCR = filterMonstersByTerrainAndFaction(monstersByCR, terrain, selectedFaction);
-
+  
     const adjustedXPBudget = getPartyXPThreshold(partySize, partyLevel, difficultyThresholds, difficulty);
     const generatedEncounter = generateEncounter(adjustedXPBudget, challengeRatingList, filteredMonstersByCR);
-
+  
     setEncounterList(generatedEncounter);
-
+  
     // Set the encounter distance
     setEncounterDistance(generateEncounterDistance(terrain));
     // Set the environmental effects
-  setWind(generateWind());
-  setPrecipitation(generatePrecipitation());
-  setLightLevel(generateLightLevel());
-  }
+    setWind(generateWind());
+    setPrecipitation(generatePrecipitation());
+    setLightLevel(generateLightLevel());
   
+    // Generate and set features
+    const newFeatures = [
+      generateRandomFeature(),
+      generateRandomFeature(),
+      generateRandomFeature(),
+    ];
+  
+    setGeneratedFeatures(newFeatures);
+  }
+   
 
   return (
     <div className="App">
@@ -872,6 +922,14 @@ if (xpBudget >= 3000 && Math.random() < 0.25) {
       <h3>Wind: {wind}</h3>
       <h3>Precipitation: {precipitation}</h3>
       <h3>Light Level: {lightLevel}</h3>
+      <h2>Generated Features:</h2>
+    <ul>
+      {generatedFeatures.map((feature, index) => (
+        <li key={index}>
+          {feature.name} (Distance: {feature.distance} feet, Area: {feature.area} feet)
+        </li>
+      ))}
+    </ul>
     </div>
   );
 }
