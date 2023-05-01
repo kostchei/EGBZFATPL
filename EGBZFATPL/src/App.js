@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 
-function App() {
+function App() {   //constants go here
   const [partySize, setPartySize] = useState(4);
   const [partyLevel, setPartyLevel] = useState(1);
   const [difficulty, setDifficulty] = useState("medium");
@@ -10,6 +10,9 @@ function App() {
   const [factions, setFactions] = useState([]);
   const [selectedFaction, setSelectedFaction] = useState('');
   const [encounterDistance, setEncounterDistance] = useState(0);
+  const [wind, setWind] = useState('');
+  const [precipitation, setPrecipitation] = useState('');
+  const [lightLevel, setLightLevel] = useState('');
 
   const terrainDistanceMap = {
     desert: () => rollDice(6, 6) * 10,
@@ -530,12 +533,9 @@ function App() {
   { name: "Nightwalker", cr: "20", terrain: "arctic", faction: "Frostmourne" },
   { name: "Ancient White Dragon", cr: "20", terrain: "arctic", faction: "Calanthian Frozen North" },
   
-
         ],
           
-
-
-        
+      
         };
 
         function rollDice(number, sides) {
@@ -546,7 +546,40 @@ function App() {
           const generator = terrainDistanceMap[terrain];
           return generator ? generator() : 0;
         }
-  
+ 
+        function generateWind() {
+          const roll = rollDice(1, 20);
+          if (roll <= 12) return 'no wind';
+          if (roll <= 17) return 'light wind';
+          return 'strong wind (Disadvantage on ranged, ¾ cover at long range)';
+        }
+        
+        function generatePrecipitation() {
+          const roll = rollDice(1, 20);
+          if (roll <= 12) return 'none';
+          if (roll <= 17) return 'light rain or snow (½ Cover over 100ft)';
+          return 'strong rain or snow (¾ cover over 100ft)';
+        }
+        
+        function generateLightLevel() {
+          const roll = rollDice(1, 11);
+          const lightLevels = [
+            'Dawn, dim',
+            'Dawn, bright',
+            'Morning, overcast',
+            'Morning, clear unless precipitation',
+            'Midday or night if travelling at night',
+            'Afternoon, overcast',
+            'Afternoon clear unless precipitation',
+            'Dusk, bright',
+            'Dusk, dim',
+            'Night, moonlight',
+            'Night, dark',
+          ];
+          return lightLevels[roll - 1];
+        }
+        
+
   function updateFactions(terrain) {
     const factionsByTerrain = {
       arctic: [
@@ -738,7 +771,7 @@ if (xpBudget >= 3000 && Math.random() < 0.25) {
     );
   }
   
-  function handleSubmit(event) {
+  function handleSubmit(event) {  //all the handlesumbit stuff here
     event.preventDefault();
 
     const filteredMonstersByCR = filterMonstersByTerrainAndFaction(monstersByCR, terrain, selectedFaction);
@@ -750,6 +783,10 @@ if (xpBudget >= 3000 && Math.random() < 0.25) {
 
     // Set the encounter distance
     setEncounterDistance(generateEncounterDistance(terrain));
+    // Set the environmental effects
+  setWind(generateWind());
+  setPrecipitation(generatePrecipitation());
+  setLightLevel(generateLightLevel());
   }
   
 
@@ -832,6 +869,9 @@ if (xpBudget >= 3000 && Math.random() < 0.25) {
         ))}
       </ul>
       <h3>Encounter Distance: {encounterDistance} feet</h3>
+      <h3>Wind: {wind}</h3>
+      <h3>Precipitation: {precipitation}</h3>
+      <h3>Light Level: {lightLevel}</h3>
     </div>
   );
 }
