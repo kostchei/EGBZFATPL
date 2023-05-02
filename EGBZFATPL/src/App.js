@@ -186,6 +186,8 @@ function App() {   //constants go here
       { name: "Shadow", cr: "1/2", terrain: "arctic", faction: "Frostmourne" },
       { name: "Goblin Soldier", cr: "1/2", terrain: "arctic", faction: "Calanthian Frozen North" },
       { name: "Human Scout", cr: "1/2", terrain: "arctic", faction: "Calanthian Frozen North" },
+      { name: "Orc Nurtured One of Yurtrus", cr: "1/2", terrain: "arctic", faction: "Dungeon" },
+      
       { name: "Hobgoblin Warrior", cr: "1/2", terrain: "arctic", faction: "Calanthian Frozen North" },
       { name: "Orc Raider", cr: "1/2", terrain: "arctic", faction: "Calanthian Frozen North" },
       { name: "Dwarf Soldier", cr: "1/2", terrain: "arctic", faction: "Calanthian Frozen North" },
@@ -671,6 +673,7 @@ function App() {   //constants go here
     const factionsByTerrain = {
       arctic: [
         "Calanthian Frozen North",
+        "Dungeon",
         "Frostmourne",
         "Feyfrost",
         "Hodir Ordning",
