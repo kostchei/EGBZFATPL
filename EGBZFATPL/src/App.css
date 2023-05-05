@@ -47,7 +47,7 @@ button {
   min-width: 100%;
   min-height: 100%;
   z-index: -1;
-  background-image: url(''); /* We will set the image URL in the JSX */
+  background-image: url('%PUBLIC_URL%/test-image.jpg'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
