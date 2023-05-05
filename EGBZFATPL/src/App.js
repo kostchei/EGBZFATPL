@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
+import testImage from './assets/test-image.jpg';
 
 function App() {   //constants go here
   const [partySize, setPartySize] = useState(4);
@@ -1002,6 +1003,7 @@ if (xpBudget >= 3000 && Math.random() < 0.25) {
         </label>
         <button type="submit">Generate Encounter</button>
       </form>
+      <div className="output-container">
       <h2>Encounter:</h2>
       <ul>
       {encounterList.map((monster, index) => (
@@ -1023,6 +1025,12 @@ if (xpBudget >= 3000 && Math.random() < 0.25) {
       ))}
     </ul>
     </div>
+    <div 
+ className="background-image"
+ style={{ backgroundImage: `url(${testImage})` }}
+>
+    </div>
+  </div>
   );
 }
 
