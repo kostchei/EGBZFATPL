@@ -5,10 +5,10 @@ import testImage from './assets/test-image.jpg';
 function App() {   //constants go here
   const [partySize, setPartySize] = useState(4);
   const [partyLevel, setPartyLevel] = useState(1);
-  const [difficulty, setDifficulty] = useState('random');
+  const [difficulty, setDifficulty] = useState("random");
   const [encounterList, setEncounterList] = useState([]);
-  const [terrain, setTerrain] = useState('Arctic');
-  const [factions, setFactions] = useState('Calanthian Frozen North');
+  const [terrain, setTerrain] = useState('');
+  const [factions, setFactions] = useState([]);
   const [selectedFaction, setSelectedFaction] = useState('');
   const [encounterDistance, setEncounterDistance] = useState(0);
   const [wind, setWind] = useState('');
