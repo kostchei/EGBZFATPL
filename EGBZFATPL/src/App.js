@@ -5,10 +5,10 @@ import testImage from './assets/test-image.jpg';
 function App() {   //constants go here
   const [partySize, setPartySize] = useState(4);
   const [partyLevel, setPartyLevel] = useState(1);
-  const [difficulty, setDifficulty] = useState("medium");
+  const [difficulty, setDifficulty] = useState('random');
   const [encounterList, setEncounterList] = useState([]);
-  const [terrain, setTerrain] = useState('');
-  const [factions, setFactions] = useState([]);
+  const [terrain, setTerrain] = useState('Arctic');
+  const [factions, setFactions] = useState('Calanthian Frozen North');
   const [selectedFaction, setSelectedFaction] = useState('');
   const [encounterDistance, setEncounterDistance] = useState(0);
   const [wind, setWind] = useState('');
@@ -907,19 +907,33 @@ if (xpBudget >= 3000 && Math.random() < 0.25) {
   
     const filteredMonstersByCR = filterMonstersByTerrainAndFaction(monstersByCR, terrain, selectedFaction);
   
-    const adjustedXPBudget = getPartyXPThreshold(partySize, partyLevel, difficultyThresholds, difficulty);
+    let finalDifficulty = difficulty;
+    if (difficulty === "random") {
+      const randomValue = Math.random();
+      if (randomValue < 0.14) {
+        finalDifficulty = "easy";
+      } else if (randomValue < 0.82) {
+        finalDifficulty = "medium";
+      } else if (randomValue < 0.95) {
+        finalDifficulty = "hard";
+      } else {
+        finalDifficulty = "deadly";
+      }
+    }
+  
+    const adjustedXPBudget = getPartyXPThreshold(partySize, partyLevel, difficultyThresholds, finalDifficulty);
     const generatedEncounter = generateEncounter(adjustedXPBudget, challengeRatingList, filteredMonstersByCR);
   
     setEncounterList(generatedEncounter);
-     // Set the environmental effects
-     setWind(generateWind());
-     setPrecipitation(generatePrecipitation());
-     setLightLevel(generateLightLevel());
-    
+    // Set the environmental effects
+    setWind(generateWind());
+    setPrecipitation(generatePrecipitation());
+    setLightLevel(generateLightLevel());
+  
     // Set the encounter distance
     const generatedEncounterDistance = generateEncounterDistance(terrain);
     setEncounterDistance(generatedEncounterDistance);
-
+  
     if (generatedEncounterDistance > 0) {
       // Generate and set features
       const newFeatures = [
@@ -963,6 +977,7 @@ if (xpBudget >= 3000 && Math.random() < 0.25) {
             <option value="medium">Medium</option>
             <option value="hard">Hard</option>
             <option value="deadly">Deadly</option>
+            <option value="random">Random</option>
           </select>
         </label>
         <label>
