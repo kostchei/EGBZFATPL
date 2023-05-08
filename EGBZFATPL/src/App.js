@@ -15,7 +15,8 @@ function App() {   //constants go here
   const [precipitation, setPrecipitation] = useState('');
   const [lightLevel, setLightLevel] = useState('');
   const [generatedFeatures, setGeneratedFeatures] = useState([]);
-  const [totalXPBudgetSpent, setTotalXPBudgetSpent] = useState(0);
+  const [actualDifficulty, setActualDifficulty] = useState("");
+  const [xpBudget, setXpBudget] = useState(0);
 
   const terrainDistanceMap = {
     desert: () => rollDice(6, 6) * 10,
@@ -919,10 +920,13 @@ if (xpBudget >= 3000 && Math.random() < 0.25) {
         finalDifficulty = "deadly";
       }
     }
+    setActualDifficulty(finalDifficulty);
   
     const adjustedXPBudget = getPartyXPThreshold(partySize, partyLevel, difficultyThresholds, finalDifficulty);
+    setXpBudget(adjustedXPBudget);
+
     const generatedEncounter = generateEncounter(adjustedXPBudget, challengeRatingList, filteredMonstersByCR);
-    setTotalXPBudgetSpent(generatedEncounter.totalXP);
+    
 
     setEncounterList(generatedEncounter);
     // Set the environmental effects
@@ -1020,8 +1024,8 @@ if (xpBudget >= 3000 && Math.random() < 0.25) {
       </form>
       <div className="output-container">
       <h2>Encounter:</h2>
-      <h3>Difficulty: {difficulty.charAt(0).toUpperCase() + difficulty.slice(1)}</h3>
-      <h3>Total XP Budget Spent: {totalXPBudgetSpent}</h3>
+      <h3>Difficulty: {actualDifficulty.charAt(0).toUpperCase() + actualDifficulty.slice(1)}</h3>
+       <h3>XP Budget: {xpBudget}</h3>
       <ul>
       {encounterList.map((monster, index) => (
           <li key={index}>
