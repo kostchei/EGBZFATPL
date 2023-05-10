@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import testImage from './assets/test-image.jpg';
 import monstersByCRData from './data/monstersByCR.json';
+import featuresListData from './data/featuresList.json';
 
 
 function App() {   //constants go here
@@ -51,6 +52,9 @@ function App() {   //constants go here
     { level: 19, easy: 2400, medium: 4900, hard: 7300, deadly: 10900 },
     { level: 20, easy: 2800, medium: 5700, hard: 8500, deadly: 12700 },
   ];
+
+  const featuresList = featuresListData.featuresList;
+  /* temp remove
   const featuresList = [
     { name: "Crevasse, rock, ice or lava - across path", heightModifier: -1  },
     { name: "Crevasse, rock, ice or lava - parallel to path", heightModifier: -1  },
@@ -76,7 +80,7 @@ function App() {   //constants go here
     { name: "Ruin ¾ cover, no roof", areaModifier: 0.5, heightModifier: 0.3  },
     { name: "Building full cover, roof", areaModifier: 0.5, heightModifier: 0.2  },
     { name: "Monument, way marker, shrine, well or cache ¾ cover", areaModifier: 0.1, heightModifier: 0.1 },
-  ];
+  ]; */
   
   const challengeRatingList = [
     { cr: "0", xp: 10 },
