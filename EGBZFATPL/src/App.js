@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./App.css";
 import testImage from './assets/test-image.jpg';
+import monstersByCRData from './data/monstersByCR.json';
+
 
 function App() {   //constants go here
   const [partySize, setPartySize] = useState(4);
@@ -103,6 +105,9 @@ function App() {   //constants go here
     { cr: 20, xp: 25000 },
   ];
   
+  const monstersByCR = monstersByCRData;
+  
+  /*
   const monstersByCR = {
     "0": [
       { name: "Arctic Hare", cr: "0", terrain: "arctic", faction: "Calanthian Frozen North" },
@@ -641,6 +646,7 @@ function App() {   //constants go here
   { name: "Ancient White Dragon", cr: "20", terrain: "arctic", faction: "Calanthian Frozen North" },
  ],
    };
+             removed for testing */ 
 
    function generateRandomFeature(encounterDistance) {
     const randomFeature = featuresList[Math.floor(Math.random() * featuresList.length)];
