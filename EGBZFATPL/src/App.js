@@ -152,18 +152,19 @@ function App() {   //constants go here
           return lightLevels[roll - 1];
         }
         
-
+  /*"Suloise", "Northern Barbarians", "Wildthings", "Magma Dwellers", "Pale Wyrms", "Goblinkin", "Frostmourne", "Feyfrost", "Hodir Ordning" */
   function updateFactions(terrain) {
     const factionsByTerrain = {
       arctic: [
-        "Calanthian Frozen North",
+        "Wildthings",
         "Dungeon",
         "Frostmourne",
         "Feyfrost",
+        "Pale Wyrms",
+        "Magma Dwellers",
+        "Goblinkin",
         "Hodir Ordning",
-        "Frost Barbarians",
-        "Snow Barbarians",
-        "Indigenous",
+        "Northern Barbarians",
         "Sueloise",
       ],
       desert: [

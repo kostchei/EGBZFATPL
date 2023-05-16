@@ -1,28 +1,29 @@
 {
+
     "0": [
       {
         "name": "Arctic Hare",
         "cr": "0",
         "terrain": "arctic",
-        "faction": "Calanthian Frozen North"
+        "faction": "Wildthings"
       },
       {
         "name": "Snowy Owl",
         "cr": "0",
         "terrain": "arctic",
-        "faction": "Calanthian Frozen North"
+        "faction": "Wildthings"
       },
       {
         "name": "Ptarmigan",
         "cr": "0",
         "terrain": "arctic",
-        "faction": "Calanthian Frozen North"
+        "faction": "Wildthings"
       },
       {
         "name": "Deer",
         "cr": "0",
         "terrain": "arctic",
-        "faction": "Calanthian Frozen North"
+        "faction": "Wildthings"
       },
       {
         "name": "Crawling hand",
@@ -84,19 +85,19 @@
         "name": "Arctic Fox",
         "cr": "1/8",
         "terrain": "arctic",
-        "faction": "Calanthian Frozen North"
+        "faction": "Wildthings"
       },
       {
         "name": "Seal",
         "cr": "1/8",
         "terrain": "arctic",
-        "faction": "Calanthian Frozen North"
+        "faction": "Wildthings"
       },
       {
         "name": "Ice Snake",
         "cr": "1/8",
         "terrain": "arctic",
-        "faction": "Calanthian Frozen North"
+        "faction": "Pale Wyrms"
       },
       {
         "name": "Twig Blight",
@@ -120,7 +121,7 @@
         "name": "Kobold",
         "cr": "1/8",
         "terrain": "arctic",
-        "faction": "Dungeon"
+        "faction": "Pale Wyrms"
       },
       {
         "name": "Tribal Warrior",
@@ -266,7 +267,7 @@
         "name": "Elk",
         "cr": "1/4",
         "terrain": "arctic",
-        "faction": "Calanthian Frozen North"
+        "faction": "Wildthings"
       },
       {
         "name": "Dwarf Scout",
@@ -296,7 +297,7 @@
         "name": "Reindeer",
         "cr": "1/4",
         "terrain": "arctic",
-        "faction": "Snow Barbarians"
+        "faction": "Wildthings"
       },
       {
         "name": "Pair of Yeti Tykes",
@@ -496,7 +497,7 @@
         "name": "Ice Mephit",
         "cr": "1/2",
         "terrain": "arctic",
-        "faction": "Dungeon"
+        "faction": "Wildthings"
       },
       {
         "name": "Anviwrought Raptor",
@@ -550,37 +551,37 @@
       "name": "Arctic Wolf",
       "cr": "1/2",
       "terrain": "arctic",
-      "faction": "Calanthian Frozen North"
+      "faction": "Wildthings"
     },
     {
       "name": "Arctic Worg",
       "cr": "1/2",
       "terrain": "arctic",
-      "faction": "Calanthian Frozen North"
+      "faction": "Wildthings"
     },
     {
       "name": "Wolverine",
       "cr": "1/2",
       "terrain": "arctic",
-      "faction": "Calanthian Frozen North"
+      "faction": "Wildthings"
     },
     {
       "name": "Lynx",
       "cr": "1/2",
       "terrain": "arctic",
-      "faction": "Calanthian Frozen North"
+      "faction": "Wildthings"
     },
     {
       "name": "Muskox",
       "cr": "1/2",
       "terrain": "arctic",
-      "faction": "Calanthian Frozen North"
+      "faction": "Wildthings"
     },
     {
       "name": "Ice Mephit",
       "cr": "1/2",
       "terrain": "arctic",
-      "faction": "Calanthian Frozen North"
+      "faction": "Wildthings"
     },
     {
       "name": "Magmin",
@@ -592,13 +593,13 @@
       "name": "Arctic Constrictor Snake",
       "cr": "1/2",
       "terrain": "arctic",
-      "faction": "Calanthian Frozen North"
+      "faction": "Pale Wyrms"
     },
     {
       "name": "Ambush Drake",
       "cr": "1/2",
       "terrain": "arctic",
-      "faction": "Calanthian Frozen North"
+      "faction": "Pale Wyrms"
     },
     {
       "name": "Valenar Steed",
@@ -623,12 +624,6 @@
       "cr": "1/2",
       "terrain": "arctic",
       "faction": "Snow Barbarians"
-    },
-    {
-      "name": "Ice Mephit",
-      "cr": "1/2",
-      "terrain": "arctic",
-      "faction": "Indigenous"
     },
     {
       "name": "Thug",
@@ -754,10 +749,10 @@
     "1": [
       {
        "name": "Snow Maiden", "cr": "1", "terrain": "arctic", "faction": "Frostmourne" },
-      { "name": "Brown Bear", "cr": "1", "terrain": "arctic", "faction": "Calanthian Frozen North" },
+      { "name": "Brown Bear", "cr": "1", "terrain": "arctic", "faction": "Wildthings" },
       { "name": "Harpy", "cr": "1", "terrain": "arctic", "faction": "Calanthian Frozen North" },
-      { "name": "Dire Wolf", "cr": "1", "terrain": "arctic", "faction": "Calanthian Frozen North" },
-  { "name": "Walrus", "cr": "1", "terrain": "arctic", "faction": "Calanthian Frozen North" },
+      { "name": "Dire Wolf", "cr": "1", "terrain": "arctic", "faction": "Wildthings" },
+  { "name": "Walrus", "cr": "1", "terrain": "arctic", "faction": "Wildthings" },
   { "name": "Bugbear Thug", "cr": "1", "terrain": "arctic", "faction": "Calanthian Frozen North" },
       { "name": "Dread Warrior", "cr": "1", "terrain": "arctic", "faction": "Frostmourne" },
       { "name": "Duergar", "cr": "1", "terrain": "arctic", "faction": "Calanthian Frozen North" },
@@ -780,8 +775,8 @@
       { "name": "Half-Ogre", "cr": "1", "terrain": "arctic", "faction": "Hodir Ordning" },
       { "name": "Skull Lasher", "cr": "1", "terrain": "arctic", "faction": "Frost Barbarians" },
       { "name": "Spy", "cr": "1", "terrain": "arctic", "faction": "Snow Barbarians" },
-      { "name": "Brown Bear", "cr": "1", "terrain": "arctic", "faction": "Indigenous" },
-      { "name": "Giant Eagle", "cr": "1", "terrain": "arctic", "faction": "Indigenous" },
+      { "name": "Brown Bear", "cr": "1", "terrain": "arctic", "faction": "Wildthings" },
+      { "name": "Giant Eagle", "cr": "1", "terrain": "arctic", "faction": "Wildthings" },
       { "name": "Evil Mage", "cr": "1", "terrain": "arctic", "faction": "Sueloise" },
       { "name": "Engineer", "cr": "1", "terrain": "hills", "faction": "Kronspire" },
       { "name": "Emptiness", "cr": "1", "terrain": "hills", "faction": "Barren" },
@@ -799,7 +794,7 @@
   ],
   "2": [
       { "name": "Ghast (gheist)", "cr": "2", "terrain": "arctic", "faction": "Frostmourne" },
-      { "name": "Bison", "cr": "2", "terrain": "arctic", "faction": "Calanthian Frozen North" },
+      { "name": "Bison", "cr": "2", "terrain": "arctic", "faction": "Wildthings" },
       { "name": "Aartuk Weedling", "cr": "2", "terrain": "arctic", "faction": "Dungeon" },
       { "name": "Gelatinous Cube", "cr": "2", "terrain": "arctic", "faction": "Dungeon" },
       { "name": "Mimic", "cr": "2", "terrain": "arctic", "faction": "Dungeon" },
@@ -810,21 +805,21 @@
       { "name": "Spined Devil", "cr": "2", "terrain": "arctic", "faction": "Dungeon" },
       { "name": "Meenlock", "cr": "2", "terrain": "arctic", "faction": "Dungeon" },
       { "name": "Gargoyle", "cr": "2", "terrain": "arctic", "faction": "Dungeon" },
-      { "name": "White Dragon Wyrmling", "cr": "2", "terrain": "arctic", "faction": "Dungeon" },
+      { "name": "White Dragon Wyrmling", "cr": "2", "terrain": "arctic", "faction": "Pale Wyrms" },
       { "name": "Rug of Smothering", "cr": "2", "terrain": "arctic", "faction": "Dungeon" },
-      { "name": "Cave Bear", "cr": "2", "terrain": "arctic", "faction": "Dungeon" },
+      { "name": "Cave Bear", "cr": "2", "terrain": "arctic", "faction": "Wildthings" },
       { "name": "Nothic", "cr": "2", "terrain": "arctic", "faction": "Dungeon" },
       { "name": "Swarm of Hoard Scarabs", "cr": "2", "terrain": "arctic", "faction": "Dungeon" },
-      { "name": "Giant Elk", "cr": "2", "terrain": "arctic", "faction": "Calanthian Frozen North" },
+      { "name": "Giant Elk", "cr": "2", "terrain": "arctic", "faction": "Wildthings" },
       { "name": "Human Berserker", "cr": "2", "terrain": "arctic", "faction": "Calanthian Frozen North" },
       { "name": "Human Shaman", "cr": "2", "terrain": "arctic", "faction": "Calanthian Frozen North" },
       { "name": "Bandit Captain", "cr": "2", "terrain": "arctic", "faction": "Calanthian Frozen North" },
       { "name": "Half-Orc Barbarian", "cr": "2", "terrain": "arctic", "faction": "Calanthian Frozen North" },
-      { "name": "Polar Bear", "cr": "2", "terrain": "arctic", "faction": "Calanthian Frozen North" },
+      { "name": "Polar Bear", "cr": "2", "terrain": "arctic", "faction": "Wildthings" },
       { "name": "Azer", "cr": "2", "terrain": "arctic", "faction": "Calanthian Frozen North" },
-      { "name": "White Dragon Wyrmling", "cr": "2", "terrain": "arctic", "faction": "Calanthian Frozen North" },
-      { "name": "Purple Wormling", "cr": "2", "terrain": "arctic", "faction": "Calanthian Frozen North" },
-      { "name": "White Guard Drake", "cr": "2", "terrain": "arctic", "faction": "Calanthian Frozen North" },    
+      { "name": "White Dragon Wyrmling", "cr": "2", "terrain": "arctic", "faction": "Pale Wyrms" },
+      { "name": "Purple Wormling", "cr": "2", "terrain": "arctic", "faction": "Pale Wyrms" },
+      { "name": "White Guard Drake", "cr": "2", "terrain": "arctic", "faction": "Pale Wyrms" },    
       { "name": "Will-o-Wisp", "cr": "2", "terrain": "arctic", "faction": "Frostmourne" },
       { "name": "Undying Soldier", "cr": "2", "terrain": "arctic", "faction": "Frostmourne" },
       { "name": "Ice Nymph", "cr": "2", "terrain": "arctic", "faction": "Feyfrost" },
@@ -836,8 +831,8 @@
       { "name": "Barbarian Leader", "cr": "2", "terrain": "arctic", "faction": "Snow Barbarians" },
       { "name": "Barbarian Shaman", "cr": "2", "terrain": "arctic", "faction": "Snow Barbarians" },
       { "name": "Druid", "cr": "2", "terrain": "arctic", "faction": "Snow Barbarians" },
-      { "name": "Sabretooth", "cr": "2", "terrain": "arctic", "faction": "Indigenous" },
-      { "name": "Polar Bear", "cr": "2", "terrain": "arctic", "faction": "Indigenous" },
+      { "name": "Sabretooth", "cr": "2", "terrain": "arctic", "faction": "Wildthings" },
+      { "name": "Polar Bear", "cr": "2", "terrain": "arctic", "faction": "Wildthings" },
       { "name": "Protege (Thayan Apprentice)", "cr": "2", "terrain": "arctic", "faction": "Sueloise" },
       { "name": "Bandit Captain", "cr": "2", "terrain": "arctic", "faction": "Sueloise" },
       { "name": "Engineer", "cr": "2", "terrain": "hills", "faction": "Kronspire" },
@@ -862,13 +857,13 @@
       { "name": "Goblin Warlord", "cr": "3", "terrain": "arctic", "faction": "Calanthian Frozen North" },
       { "name": "Hobgoblin Captain", "cr": "3", "terrain": "arctic", "faction": "Calanthian Frozen North" },
       { "name": "Outcast Human Warlock", "cr": "3", "terrain": "arctic", "faction": "Calanthian Frozen North" },
-      { "name": "Siberian Tiger", "cr": "3", "terrain": "arctic", "faction": "Calanthian Frozen North" },
+      { "name": "Siberian Tiger", "cr": "3", "terrain": "arctic", "faction": "Wildthings" },
       { "name": "Hag of fetid Gaze", "cr": "3", "terrain": "arctic", "faction": "Feyfrost" },
       { "name": "Ice Troll", "cr": "3", "terrain": "arctic", "faction": "Hodir Ordning" },
       { "name": "Werewolf", "cr": "3", "terrain": "arctic", "faction": "Frost Barbarians" },
       { "name": "Archer", "cr": "3", "terrain": "arctic", "faction": "Snow Barbarians" },
-      { "name": "Winter Wolf", "cr": "3", "terrain": "arctic", "faction": "Indigenous" },
-      { "name": "Yeti", "cr": "3", "terrain": "arctic", "faction": "Indigenous" },
+      { "name": "Winter Wolf", "cr": "3", "terrain": "arctic", "faction": "Wildthings" },
+      { "name": "Yeti", "cr": "3", "terrain": "arctic", "faction": "Wildthings" },
       { "name": "Precognitive Mage", "cr": "3", "terrain": "arctic", "faction": "Sueloise" },
       { "name": "Engineer", "cr": "3", "terrain": "hills", "faction": "Kronspire" },
       { "name": "Emptiness", "cr": "3", "terrain": "hills", "faction": "Barren" },
@@ -901,7 +896,7 @@
       { "name": "Weretiger", "cr": "4", "terrain": "arctic", "faction": "Frost Barbarians" },
       { "name": "Wereboar", "cr": "4", "terrain": "arctic", "faction": "Frost Barbarians" },
       { "name": "Oracle", "cr": "4", "terrain": "arctic", "faction": "Snow Barbarians" },
-      { "name": "Guardian Wolf", "cr": "4", "terrain": "arctic", "faction": "Indigenous" },
+      { "name": "Guardian Wolf", "cr": "4", "terrain": "arctic", "faction": "Wildthings" },
       { "name": "Sueloise Reckoner", "cr": "4", "terrain": "arctic", "faction": "Sueloise" },
       { "name": "Engineer", "cr": "4", "terrain": "hills", "faction": "Kronspire" },
       { "name": "Emptiness", "cr": "4", "terrain": "hills", "faction": "Barren" },
@@ -919,7 +914,7 @@
     "5": [
       { "name": "Wraith", "cr": "5", "terrain": "arctic", "faction": "Frostmourne" },
       { "name": "Fire Elemental", "cr": "5", "terrain": "arctic", "faction": "Calanthian Frozen North" },
-      { "name": "Water Elemental", "cr": "5", "terrain": "arctic", "faction": "Calanthian Frozen North" },
+      { "name": "Water Elemental", "cr": "5", "terrain": "arctic", "faction": "Wildthings" },
       { "name": "Young Remorhaz", "cr": "5", "terrain": "arctic", "faction": "Calanthian Frozen North" },
       { "name": "Troll Marauder", "cr": "5", "terrain": "arctic", "faction": "Calanthian Frozen North" },
       { "name": "Human Werebear", "cr": "5", "terrain": "arctic", "faction": "Calanthian Frozen North" },
@@ -933,8 +928,8 @@
       { "name": "Frost Giant Servant", "cr": "5", "terrain": "arctic", "faction": "Hodir Ordning" },
       { "name": "Gladiator", "cr": "5", "terrain": "arctic", "faction": "Frost Barbarians" },
       { "name": "Great Warrior", "cr": "5", "terrain": "arctic", "faction": "Snow Barbarians" },
-      { "name": "Tlacatecolo", "cr": "5", "terrain": "arctic", "faction": "Indigenous" },
-      { "name": "Unicorn", "cr": "5", "terrain": "arctic", "faction": "Indigenous" },
+      { "name": "Tlacatecolo", "cr": "5", "terrain": "arctic", "faction": "Wildthings" },
+      { "name": "Unicorn", "cr": "5", "terrain": "arctic", "faction": "Wildthings" },
       { "name": "Immortal Lotus Monk", "cr": "5", "terrain": "arctic", "faction": "Sueloise" },
       { "name": "Engineer", "cr": "5", "terrain": "hills", "faction": "Kronspire" },
       { "name": "Emptiness", "cr": "5", "terrain": "hills", "faction": "Barren" },
@@ -953,13 +948,13 @@
       { "name": "Frost Giant Skeleton", "cr": "6", "terrain": "arctic", "faction": "Frostmourne" },
       { "name": "Human Warlord", "cr": "6", "terrain": "arctic", "faction": "Calanthian Frozen North" },
       { "name": "Annis Hag", "cr": "6", "terrain": "arctic", "faction": "Feyfrost" },
-      { "name": "Young White Dragon", "cr": "6", "terrain": "arctic", "faction": "Calanthian Frozen North" },
+      { "name": "Young White Dragon", "cr": "6", "terrain": "arctic", "faction": "Pale Wyrms" },
       { "name": "Icebound Ettin", "cr": "6", "terrain": "arctic", "faction": "Calanthian Frozen North" },
       { "name": "Hobgoblin Warlord", "cr": "6", "terrain": "arctic", "faction": "Calanthian Frozen North" },
       { "name": "Cyclops", "cr": "6", "terrain": "arctic", "faction": "Hodir Ordning" },
       { "name": "3 Berserkers", "cr": "6", "terrain": "arctic", "faction": "Frost Barbarians" },
-      { "name": "Young White Dragon", "cr": "6", "terrain": "arctic", "faction": "Snow Barbarians" },
-      { "name": "Mammoth", "cr": "6", "terrain": "arctic", "faction": "Indigenous" },
+      { "name": "Young White Dragon", "cr": "6", "terrain": "arctic", "faction": "Pale Wyrms" },
+      { "name": "Mammoth", "cr": "6", "terrain": "arctic", "faction": "Wildthings" },
       { "name": "Mage", "cr": "6", "terrain": "arctic", "faction": "Sueloise" },
       { "name": "Engineer", "cr": "6", "terrain": "hills", "faction": "Kronspire" },
       { "name": "Emptiness", "cr": "6", "terrain": "hills", "faction": "Barren" },
@@ -983,7 +978,7 @@
         { "name": "Stone giant", "cr": "7", "terrain": "arctic", "faction": "Hodir Ordning" },
         { "name": "5 Berserkers", "cr": "7", "terrain": "arctic", "faction": "Frost Barbarians" },
         { "name": "Druid of the Old Ways", "cr": "7", "terrain": "arctic", "faction": "Snow Barbarians" },
-        { "name": "Giant White Ape", "cr": "7", "terrain": "arctic", "faction": "Indigenous" },
+        { "name": "Giant White Ape", "cr": "7", "terrain": "arctic", "faction": "Wildthings" },
         { "name": "Lorehold Professor of Order", "cr": "7", "terrain": "arctic", "faction": "Sueloise" },
         { "name": "Engineer", "cr": "7", "terrain": "hills", "faction": "Kronspire" },
         { "name": "Emptiness", "cr": "7", "terrain": "hills", "faction": "Barren" },
@@ -1022,7 +1017,7 @@
       "9": [
         { "name": "Frost Giant Zombie", "cr": "9", "terrain": "arctic", "faction": "Frostmourne" },
         { "name": "Conclave Dryad", "cr": "9", "terrain": "arctic", "faction": "Feyfrost" },
-        { "name": "Frost Salamander", "cr": "9", "terrain": "arctic", "faction": "Calanthian Frozen North" },
+        { "name": "Frost Salamander", "cr": "9", "terrain": "arctic", "faction": "Pale Wyrms" },
         { "name": "Cloud Giant", "cr": "9", "terrain": "arctic", "faction": "Hodir Ordning" },
         { "name": "Fire Giant", "cr": "9", "terrain": "arctic", "faction": "Hodir Ordning" },
         { "name": "Warpriest", "cr": "9", "terrain": "arctic", "faction": "Frost Barbarians" },
@@ -1048,7 +1043,7 @@
           { "name": "Sunder Shaman", "cr": "10", "terrain": "arctic", "faction": "Hodir Ordning" },
           { "name": "Chardalyn Berserker and 6 Beserkers", "cr": "10", "terrain": "arctic", "faction": "Frost Barbarians" },
           { "name": "Stone Golem", "cr": "10", "terrain": "arctic", "faction": "Snow Barbarians" },
-          { "name": "Quaggoth Thonot and 4 Quaggoths", "cr": "10", "terrain": "arctic", "faction": "Indigenous" },
+          { "name": "Quaggoth Thonot and 4 Quaggoths", "cr": "10", "terrain": "arctic", "faction": "Wildthings" },
           { "name": "Monastic High Curator", "cr": "10", "terrain": "arctic", "faction": "Sueloise" },
           { "name": "Engineer", "cr": "10", "terrain": "hills", "faction": "Kronspire" },
           { "name": "Emptiness", "cr": "10", "terrain": "hills", "faction": "Barren" },
@@ -1066,12 +1061,12 @@
          
           "11": [
           { "name": "Blackguard on Nightmare", "cr": "11", "terrain": "arctic", "faction": "Frostmourne" },
-          { "name": "Adult Remorhaz", "cr": "11", "terrain": "arctic", "faction": "Calanthian Frozen North" },
+          { "name": "Adult Remorhaz", "cr": "11", "terrain": "arctic", "faction": "Pale Wyrms" },
           { "name": "3 Yeth hounds and a Dragon Hunter", "cr": "11", "terrain": "arctic", "faction": "Feyfrost" },
           { "name": "Spirit Troll", "cr": "11", "terrain": "arctic", "faction": "Hodir Ordning" },
           { "name": "Death Embrace", "cr": "11", "terrain": "arctic", "faction": "Frost Barbarians" },
           { "name": "Behir", "cr": "11", "terrain": "arctic", "faction": "Snow Barbarians" },
-          { "name": "Remorhaz", "cr": "11", "terrain": "arctic", "faction": "Indigenous" },
+          { "name": "Remorhaz", "cr": "11", "terrain": "arctic", "faction": "Pale Wyrms" },
           { "name": "2 Monastic Infiltrators", "cr": "11", "terrain": "arctic", "faction": "Sueloise" },
           { "name": "Engineer", "cr": "11", "terrain": "hills", "faction": "Kronspire" },
           { "name": "Emptiness", "cr": "11", "terrain": "hills", "faction": "Barren" },
@@ -1095,7 +1090,7 @@
           { "name": "Frost Giant Everlasting One", "cr": "12", "terrain": "arctic", "faction": "Hodir Ordning" },
           { "name": "Warlord", "cr": "12", "terrain": "arctic", "faction": "Frost Barbarians" },
           { "name": "ArchDruid", "cr": "12", "terrain": "arctic", "faction": "Snow Barbarians" },
-          { "name": "6 Yeti", "cr": "12", "terrain": "arctic", "faction": "Indigenous" },
+          { "name": "6 Yeti", "cr": "12", "terrain": "arctic", "faction": "Wildthings" },
           { "name": "ArchMage", "cr": "12", "terrain": "arctic", "faction": "Sueloise" },
           { "name": "Engineer", "cr": "12", "terrain": "hills", "faction": "Kronspire" },
           { "name": "Emptiness", "cr": "12", "terrain": "hills", "faction": "Barren" },
@@ -1112,8 +1107,8 @@
         ],      
         "13": [
         { "name": "Vampire", "cr": "13", "terrain": "arctic", "faction": "Frostmourne" },
-        { "name": "Adult White Dragon", "cr": "13", "terrain": "arctic", "faction": "Calanthian Frozen North" },
-        { "name": "Young Purple Worm", "cr": "13", "terrain": "arctic", "faction": "Calanthian Frozen North" }
+        { "name": "Adult White Dragon", "cr": "13", "terrain": "arctic", "faction": "Pale Wyrms" },
+        { "name": "Young Purple Worm", "cr": "13", "terrain": "arctic", "faction": "Pale Wyrms" }
       ],
          
       "14": [
@@ -1123,7 +1118,7 @@
          
     "15": [
     { "name": "Skull Lord", "cr": "15", "terrain": "arctic", "faction": "Frostmourne" },
-    { "name": "Frost Purple Worm", "cr": "15", "terrain": "arctic", "faction": "Calanthian Frozen North" }
+    { "name": "Frost Purple Worm", "cr": "15", "terrain": "arctic", "faction": "Pale Wyrms" }
 
   ],         
   "16": [
@@ -1132,7 +1127,7 @@
 ],        
 "17": [
 { "name": "Death Knight", "cr": "17", "terrain": "arctic", "faction": "Frostmourne" },
-{ "name": "Frost Worm", "cr": "17", "terrain": "arctic", "faction": "Calanthian Frozen North" }
+{ "name": "Frost Worm", "cr": "17", "terrain": "arctic", "faction": "Pale Wyrms" }
 
 ],
 "18": [
@@ -1145,7 +1140,7 @@
 ],
 "20": [
   { "name": "Nightwalker", "cr": "20", "terrain": "arctic", "faction": "Frostmourne" },
-  { "name": "Ancient White Dragon", "cr": "20", "terrain": "arctic", "faction": "Calanthian Frozen North" }
+  { "name": "Ancient White Dragon", "cr": "20", "terrain": "arctic", "faction": "Pale Wyrms" }
 
 
           ]
