@@ -6,11 +6,11 @@ import featuresListData from './data/featuresList.json';
 
 
 function App() {   //constants go here
-  const [partySize, setPartySize] = useState(4);
+  const [partySize, setPartySize] = useState(2);
   const [partyLevel, setPartyLevel] = useState(1);
   const [difficulty, setDifficulty] = useState("random");
   const [encounterList, setEncounterList] = useState([]);
-  const [terrain, setTerrain] = useState('');
+  const [terrain, setTerrain] = useState('Arctic');
   const [factions, setFactions] = useState([]);
   const [selectedFaction, setSelectedFaction] = useState('');
   const [encounterDistance, setEncounterDistance] = useState(0);
