@@ -189,7 +189,7 @@
         "name": "Goblin Scout",
         "cr": "1/4",
         "terrain": "arctic",
-        "faction": "Calanthian Frozen North"
+        "faction": "Goblinkin"
       },
       {
         "name": "Grimlock",
@@ -533,13 +533,13 @@
         "name": "Hobgoblin Warrior",
         "cr": "1/2",
         "terrain": "arctic",
-        "faction": "Calanthian Frozen North"
+        "faction": "Goblinkin"
       },
       {
         "name": "Orc Raider",
         "cr": "1/2",
         "terrain": "arctic",
-        "faction": "Calanthian Frozen North"
+        "faction": "Goblinkin"
     },
     {
       "name": "Dwarf Soldier",
@@ -754,7 +754,7 @@
       { "name": "Dire Wolf", "cr": "1", "terrain": "arctic", "faction": "Wildthings" },
       { "name": "Deep Dragon Wrymling", "cr": "1", "terrain": "arctic", "faction": "Pale Wyrms" },
       { "name": "Walrus", "cr": "1", "terrain": "arctic", "faction": "Wildthings" },
-      { "name": "Bugbear Thug", "cr": "1", "terrain": "arctic", "faction": "Calanthian Frozen North" },
+      { "name": "Bugbear Thug", "cr": "1", "terrain": "arctic", "faction": "Goblinkin" },
       { "name": "Dread Warrior", "cr": "1", "terrain": "arctic", "faction": "Frostmourne" },
       { "name": "Duergar", "cr": "1", "terrain": "arctic", "faction": "Calanthian Frozen North" },
       { "name": "Deep Dragon Wyrmling", "cr": "1", "terrain": "arctic", "faction": "Dungeon" },
@@ -762,7 +762,9 @@
       { "name": "Old croaker", "cr": "1", "terrain": "arctic", "faction": "Dungeon" },
       { "name": "Scarecrow", "cr": "1", "terrain": "arctic", "faction": "Dungeon" },
       { "name": "Galvanice Weird", "cr": "1", "terrain": "arctic", "faction": "Dungeon" },
-      { "name": "Nilbog", "cr": "1", "terrain": "arctic", "faction": "Dungeon" },
+      { "name": "Nilbog", "cr": "1", "terrain": "arctic", "faction": "Goblinkin" },
+      { "name": "Goblin Boss", "cr": "1", "terrain": "arctic", "faction": "Goblinkin" },
+      { "name": "Bugbear", "cr": "1", "terrain": "arctic", "faction": "Goblinkin" },
       { "name": "Vargouille", "cr": "1", "terrain": "arctic", "faction": "Dungeon" },
       { "name": "Garra", "cr": "1", "terrain": "arctic", "faction": "Dungeon" },
       { "name": "Xvart Warlock of Raxivort", "cr": "1", "terrain": "arctic", "faction": "Dungeon" },
@@ -815,7 +817,7 @@
       { "name": "Human Berserker", "cr": "2", "terrain": "arctic", "faction": "Calanthian Frozen North" },
       { "name": "Human Shaman", "cr": "2", "terrain": "arctic", "faction": "Calanthian Frozen North" },
       { "name": "Bandit Captain", "cr": "2", "terrain": "arctic", "faction": "Calanthian Frozen North" },
-      { "name": "Half-Orc Barbarian", "cr": "2", "terrain": "arctic", "faction": "Calanthian Frozen North" },
+      { "name": "Half-Orc Barbarian", "cr": "2", "terrain": "arctic", "faction": "Goblinkin" },
       { "name": "Polar Bear", "cr": "2", "terrain": "arctic", "faction": "Wildthings" },
       { "name": "Azer", "cr": "2", "terrain": "arctic", "faction": "Calanthian Frozen North" },
       { "name": "White Dragon Wyrmling", "cr": "2", "terrain": "arctic", "faction": "Pale Wyrms" },
@@ -855,9 +857,9 @@
       { "name": "Human Werewolf", "cr": "3", "terrain": "arctic", "faction": "Calanthian Frozen North" },
       { "name": "Redcap", "cr": "3", "terrain": "arctic", "faction": "Feyfrost" },
       { "name": "Dragon Army Dragonnel", "cr": "3", "terrain": "arctic", "faction": "Pale Wyrms" },
-      { "name": "Bugbear Chief", "cr": "3", "terrain": "arctic", "faction": "Calanthian Frozen North" },
-      { "name": "Goblin Warlord", "cr": "3", "terrain": "arctic", "faction": "Calanthian Frozen North" },
-      { "name": "Hobgoblin Captain", "cr": "3", "terrain": "arctic", "faction": "Calanthian Frozen North" },
+      { "name": "Bugbear Chief", "cr": "3", "terrain": "arctic", "faction": "Goblinkin" },
+      { "name": "Goblin Warlord", "cr": "3", "terrain": "arctic", "faction": "Goblinkin" },
+      { "name": "Hobgoblin Captain", "cr": "3", "terrain": "arctic", "faction": "Goblinkinh" },
       { "name": "Outcast Human Warlock", "cr": "3", "terrain": "arctic", "faction": "Calanthian Frozen North" },
       { "name": "Siberian Tiger", "cr": "3", "terrain": "arctic", "faction": "Wildthings" },
       { "name": "Hag of fetid Gaze", "cr": "3", "terrain": "arctic", "faction": "Feyfrost" },
@@ -884,7 +886,7 @@
       { "name": "Banshee", "cr": "4", "terrain": "arctic", "faction": "Frostmourne" },
       { "name": "Human Weretiger", "cr": "4", "terrain": "arctic", "faction": "Calanthian Frozen North" },
       { "name": "Duergar Stone Guard", "cr": "4", "terrain": "arctic", "faction": "Calanthian Frozen North" },
-      { "name": "Orc War Chief", "cr": "4", "terrain": "arctic", "faction": "Calanthian Frozen North" },
+      { "name": "Orc War Chief", "cr": "4", "terrain": "arctic", "faction": "Goblinkin" },
       { "name": "Hobgoblin Tribal Chieftain", "cr": "4", "terrain": "arctic", "faction": "Calanthian Frozen North" },
       { "name": "Ogre Berserker", "cr": "4", "terrain": "arctic", "faction": "Calanthian Frozen North" },
       { "name": "Mixed-Blood Sorcerer", "cr": "4", "terrain": "arctic", "faction": "Calanthian Frozen North" },
@@ -955,7 +957,7 @@
       { "name": "Young White Dragon", "cr": "6", "terrain": "arctic", "faction": "Pale Wyrms" },
       { "name": "Wyvern", "cr": "6", "terrain": "arctic", "faction": "Pale Wyrms" },
       { "name": "Icebound Ettin", "cr": "6", "terrain": "arctic", "faction": "Calanthian Frozen North" },
-      { "name": "Hobgoblin Warlord", "cr": "6", "terrain": "arctic", "faction": "Calanthian Frozen North" },
+      { "name": "Hobgoblin Warlord", "cr": "6", "terrain": "arctic", "faction": "Goblinkin" },
       { "name": "Cyclops", "cr": "6", "terrain": "arctic", "faction": "Hodir Ordning" },
       { "name": "3 Berserkers", "cr": "6", "terrain": "arctic", "faction": "Frost Barbarians" },
       { "name": "Young White Dragon", "cr": "6", "terrain": "arctic", "faction": "Pale Wyrms" },
