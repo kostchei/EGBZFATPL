@@ -115,7 +115,7 @@
         "name": "Xvart",
         "cr": "1/8",
         "terrain": "arctic",
-        "faction": "Dungeon"
+        "faction": "Goblinkin"
       },
       {
         "name": "Kobold",
@@ -143,12 +143,6 @@
       },
       {
         "name": "Vox Seeker",
-        "cr": "1/8",
-        "terrain": "arctic",
-        "faction": "Dungeon"
-      },
-      {
-        "name": "Boggle",
         "cr": "1/8",
         "terrain": "arctic",
         "faction": "Dungeon"
@@ -437,7 +431,7 @@
         "name": "Goblin Soldier",
         "cr": "1/2",
         "terrain": "arctic",
-        "faction": "Calanthian Frozen North"
+        "faction": "Goblinkin"
       },
       {
         "name": "Human Scout",
@@ -455,13 +449,13 @@
         "name": "Orc",
         "cr": "1/2",
         "terrain": "arctic",
-        "faction": "Dungeon"
+        "faction": "Goblinkin"
       },
       {
         "name": "Gnoll",
         "cr": "1/2",
         "terrain": "arctic",
-        "faction": "Dungeon"
+        "faction": "Goblinkin"
       },
       {
         "name": "Gray Ooze",
