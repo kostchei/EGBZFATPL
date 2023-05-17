@@ -10,7 +10,7 @@ function App() {   //constants go here
   const [partyLevel, setPartyLevel] = useState(1);
   const [difficulty, setDifficulty] = useState("random");
   const [encounterList, setEncounterList] = useState([]);
-  const [terrain, setTerrain] = useState('Arctic');
+  const [terrain, setTerrain] = useState('');
   const [factions, setFactions] = useState([]);
   const [selectedFaction, setSelectedFaction] = useState('');
   const [encounterDistance, setEncounterDistance] = useState(0);
