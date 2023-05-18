@@ -220,9 +220,21 @@ function App() {   //constants go here
     const filteredMonstersByCR = {};
   
     for (const cr in monstersByCR) {
-      filteredMonstersByCR[cr] = monstersByCR[cr].filter(
-        (monster) => monster.terrain === terrain && (monster.faction === faction || Math.random() > 0.75)
-      );
+      filteredMonstersByCR[cr] = monstersByCR[cr].filter((monster) => {
+        if (monster.terrain === terrain) {
+          const randomRoll = Math.random() * 100; // Generate a random number between 0 and 100
+  
+          if (randomRoll <= 75) {
+            // Choose a monster from the correct faction
+            return monster.faction === faction;
+          } else {
+            // Choose a random monster
+            return true;
+          }
+        }
+  
+        return false;
+      });
     }
   
     return filteredMonstersByCR;
