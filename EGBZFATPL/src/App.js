@@ -307,7 +307,7 @@ if (xpBudget >= 3000 && Math.random() < 0.25) {
         }
         break;
         case 3:
-          // Method 3: Six monsters each worth up to or equal to 1/12 of the xp budget
+          // Method 3: ~Six monsters each worth up to or equal to 1/12 of the xp budget
           const minionBudget = xpBudget / 12;
         
           if (minionBudget > 0) {
@@ -345,26 +345,47 @@ if (xpBudget >= 3000 && Math.random() < 0.25) {
         break;
   
         case 4:
-          // Method 4: Fifteen monsters each worth up to or equal to 1/60 of the xp budget
+          // Method 4: ~Fifteen monsters each worth up to or equal to 1/60 of the xp budget
           const swarmBudget = xpBudget / 60;
         
           if (swarmBudget > 0) {
-            for (let j = 0; j < 3; j++) { // Loop three times for three types of monsters
-              const diceRoll = Math.floor(Math.random() * 10) + 1; // Roll 1d10
-              const numMonsters = Math.min(diceRoll, 10); // Limit the number of monsters to a maximum of 10
+            const cr1 = findHighestCR(swarmBudget, challengeRatingList, filteredMonstersByCR);
+            const potentialMonsters1 = filteredMonstersByCR[cr1];
         
-              for (let i = 0; i < numMonsters; i++) {
-                const cr = findHighestCR(swarmBudget, challengeRatingList, filteredMonstersByCR);
-                const potentialMonsters = filteredMonstersByCR[cr];
+            if (potentialMonsters1 && potentialMonsters1.length > 0) {
+              const randomIndex1 = Math.floor(Math.random() * potentialMonsters1.length);
+              const selectedMonster1 = potentialMonsters1[randomIndex1];
+              addToEncounter(selectedMonster1, cr1);
         
-                if (potentialMonsters && potentialMonsters.length > 0) {
-                  const randomIndex = Math.floor(Math.random() * potentialMonsters.length);
-                  const selectedMonster = potentialMonsters[randomIndex];
-                  addToEncounter(selectedMonster, cr);
+              const diceRoll1 = Math.floor(Math.random() * 10) + 1; // Roll 1d10 for the number of monsters
+        
+              for (let i = 0; i < diceRoll1; i++) {
+                addToEncounter(selectedMonster1, cr1);
+              }
+        
+              const cr2 = findHighestCR(swarmBudget, challengeRatingList, filteredMonstersByCR);
+              const potentialMonsters2 = filteredMonstersByCR[cr2];
+        
+              if (potentialMonsters2 && potentialMonsters2.length > 0) {
+                const randomIndex2 = Math.floor(Math.random() * potentialMonsters2.length);
+                const selectedMonster2 = potentialMonsters2[randomIndex2];
+                addToEncounter(selectedMonster2, cr2);
+        
+                const diceRoll2 = Math.floor(Math.random() * 10) + 1; // Roll 1d10 for the number of monsters
+        
+                for (let i = 0; i < diceRoll2; i++) {
+                  addToEncounter(selectedMonster2, cr2);
+                }
+        
+                const diceRoll3 = Math.floor(Math.random() * 10) + 1; // Roll 1d10 for the number of monsters
+        
+                for (let i = 0; i < diceRoll3; i++) {
+                  addToEncounter(selectedMonster2, cr2);
                 }
               }
             }
           }
+        
         break;
   default:
         break;
