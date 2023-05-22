@@ -221,14 +221,15 @@ function App() {   //constants go here
   
     for (const cr in monstersByCR) {
       filteredMonstersByCR[cr] = monstersByCR[cr].filter((monster) => {
-        if (monster.terrain === terrain) {
+        // Check if the monster's terrains includes the selected terrain
+        if (monster.terrain.includes(terrain)) {
           const randomRoll = Math.random() * 100; // Generate a random number between 0 and 100
   
           if (randomRoll <= 75) {
-            // Choose a monster from the correct faction
-            return monster.faction === faction;
+            // Check if the monster's factions includes the selected faction AND monster's terrains includes the selected terrain
+            return monster.faction.includes(faction) && monster.terrain.includes(terrain);
           } else {
-            // Choose a random monster
+            // Choose a random monster from the selected terrain
             return true;
           }
         }
