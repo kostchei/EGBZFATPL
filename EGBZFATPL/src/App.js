@@ -171,10 +171,7 @@ function App() {   //constants go here
         "Baklunish", 
         "Rary-Bright Empire",
         "Old Sulm", 
-        "Tribal",
-        "Azak-Zil Demihumans",
-        "Elemental Fire",
-        "Desert Fauna",
+
       ],
       forest: [
         "Elvish",
@@ -206,7 +203,7 @@ function App() {   //constants go here
     farmland: [
       "Ulek", // lots of demihumans, dwarves, halflings, gnomes, elves
       "Borderlands", // lots of bandits, more wolves , adventurers and raiders
-      "Flan and Oerdian", //mostly human lands with central figures, majors etc
+      "Oerdian", //mostly human lands with central figures, majors etc
 
     ]
     };

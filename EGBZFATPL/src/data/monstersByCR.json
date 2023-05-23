@@ -2004,7 +2004,7 @@
         "Shortsword: Melee Weapon Attack: {@hit +4} to hit, reach 5 ft., one target. Hit: 5 ({@dice 1d6+2}) piercing damage.",
         "Shortbow: Ranged Weapon Attack: {@hit +4} to hit, range 80/320 ft., one target. Hit: 5 ({@dice 1d6+2}) piercing damage."
       ],
-      "faction": ["Dungeon"],
+      "faction": ["Frostmourne"],
       "terrain": ["arctic"]
     },
     {
@@ -3040,7 +3040,7 @@
       "action": [
         "Strength Drain: Melee Weapon Attack: {@hit +4} to hit, reach 5 ft., one creature. Hit: 9 ({@dice 2d6+2}) necrotic damage, and the target's Strength score is reduced by {@dice 1d4}. The target dies if this reduces its Strength to 0. Otherwise, the reduction lasts until the target finishes a short or long rest. If a non-evil humanoid dies from this attack, a new shadow rises from the corpse {@dice 1d4} hours later."
       ],
-      "faction": ["Dungeon"],
+      "faction": ["Frostmourne"],
       "terrain": ["arctic"]
     },
     {
@@ -3232,7 +3232,7 @@
       "action": [
         "Hooves: Melee Weapon Attack: {@hit +6} to hit, reach 5 ft., one target. Hit: 11 ({@dice 2d6+4}) bludgeoning damage."
       ],
-      "faction": ["Dungeon"],
+      "faction": ["Frostmourne"],
       "terrain": ["arctic"]
     },
     {
@@ -3698,7 +3698,7 @@
         "Bite: Melee Weapon Attack: {@hit +2} to hit, reach 5 ft., one creature. Hit: 9 ({@dice 2d6+2}) piercing damage.",
         "Claws: Melee Weapon Attack: {@hit +4} to hit, reach 5 ft., one target. Hit: 7 ({@dice 2d4+2}) slashing damage. If the target is a creature other than an elf or undead, it must succeed on a DC 10 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
       ],
-      "faction": ["Dungeon"],
+      "faction": ["Frostmourne"],
       "terrain": ["arctic"]
     },
     {
@@ -3876,7 +3876,7 @@
         "Battleaxe: Melee Weapon Attack: {@hit +5} to hit, reach 5 ft., one target. Hit: 12 ({@dice 2d8+3}) slashing damage, or 14 ({@dice 2d10+3}) slashing damage if used with two hands.",
         "Javelin: Melee or Ranged Weapon Attack: {@hit +5} to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 10 ({@dice 2d6+3}) piercing damage."
       ],
-      "faction": ["Dungeon"],
+      "faction": ["Hodir Ordning"],
       "terrain": ["arctic"]
     },
     {
@@ -3991,7 +3991,7 @@
         "Claw: Melee Weapon Attack: {@hit +5} to hit, reach 5 ft., one target. Hit: 6 ({@dice 1d6+3}) slashing damage."
       ],
       "faction": ["Wildthings"],
-      "terrain": ["ReplaceMe"]
+      "terrain": ["hills"]
     },
     {
       "name": "Quaggoth Spore Servant",
@@ -4079,7 +4079,7 @@
       "action": [
         "Life Drain: Melee Spell Attack: {@hit +4} to hit, reach 5 ft., one creature. Hit: 10 ({@dice 3d6}) necrotic damage. The target must succeed on a DC 10 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the creature finishes a long rest. The target dies if this effect reduces its hit point maximum to 0."
       ],
-      "faction": ["Dungeon"],
+      "faction": ["Frostmourne"],
       "terrain": ["arctic"]
     },
     {
@@ -4851,8 +4851,8 @@
         "Bite: Melee Weapon Attack: {@hit +3} to hit, reach 5 ft., one creature. Hit: 12 ({@dice 2d8+3}) piercing damage.",
         "Claws: Melee Weapon Attack: {@hit +5} to hit, reach 5 ft., one target. Hit: 10 ({@dice 2d6+3}) slashing damage. If the target is a creature other than an undead, it must succeed on a DC 10 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
       ],
-      "faction": ["Dungeon"],
-      "terrain": ["arctic"]
+      "faction": ["Frostmourne"],
+      "terrain": ["arctic","underdark"]
     },
     {
       "name": "Giant Boar",
@@ -5191,7 +5191,7 @@
         "Greataxe: Melee Weapon Attack: {@hit +6} to hit, reach 5 ft., one target. Hit: 17 ({@dice 2d12+4}) slashing damage.",
         "Gore: Melee Weapon Attack: {@hit +6} to hit, reach 5 ft., one target. Hit: 13 ({@dice 2d8+4}) piercing damage."
       ],
-      "faction": ["Dungeon"],
+      "faction": ["Dungeon","Frostmourne"],
       "terrain": ["arctic"]
     },
     {
@@ -5284,7 +5284,7 @@
         "Greatclub: Melee Weapon Attack: {@hit +6} to hit, reach 5 ft., one target. Hit: 13 ({@dice 2d8+4}) bludgeoning damage.",
         "Javelin: Melee or Ranged Weapon Attack: {@hit +6} to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 11 ({@dice 2d6+4}) piercing damage."
       ],
-      "faction": ["Dungeon"],
+      "faction": ["Hodir Ordning"],
       "terrain": ["arctic"]
     },
     {
@@ -5305,7 +5305,7 @@
       "action": [
         "Morningstar: Melee Weapon Attack: {@hit +6} to hit, reach 5 ft., one target. Hit: 13 ({@dice 2d8+4}) bludgeoning damage."
       ],
-      "faction": ["Dungeon"],
+      "faction": ["Dungeon","Frostmourne"],
       "terrain": ["arctic"]
     },
     {
@@ -5459,7 +5459,7 @@
         "Forceful Slam: Melee Weapon Attack: {@hit +4} to hit, reach 5 ft., one creature. Hit: 10 ({@dice 3d6}) force damage.",
         "Telekinetic Thrust: The poltergeist targets a creature or unattended object within 30 feet of it. A creature must be Medium or smaller to be affected by this magic, and an object can weigh up to 150 pounds. If the target is a creature, the poltergeist makes a Charisma check contested by the target's Strength check. If the poltergeist wins the contest, the poltergeist hurls the target up to 30 feet in any direction, including upward. If the target then comes into contact with a hard surface or heavy object, the target takes {@dice 1d6} damage per 10 feet moved. If the target is an object that isn't being worn or carried, the poltergeist hurls it up to 30 feet in any direction. The poltergeist can use the object as a ranged weapon, attacking one creature along the object's path ({@hit +4} to hit) and dealing 5 ({@dice 2d4}) bludgeoning damage on a hit."
       ],
-      "faction": ["Dungeon"],
+      "faction": ["Frostmourne"],
       "terrain": ["arctic"]
     },
     {
@@ -5724,8 +5724,8 @@
         "Shock: Melee Spell Attack: {@hit +4} to hit, reach 5 ft., one creature. Hit: 9 ({@dice 2d8}) lightning damage.",
         "Invisibility: The will-o'-wisp and its light magically become invisible until it attacks or uses its Consume Life, or until its concentration ends (as if concentrating on a spell)."
       ],
-      "faction": ["Dungeon"],
-      "terrain": ["arctic"]
+      "faction": ["Frostmourne"],
+      "terrain": ["arctic", "forest"]
     }
   ],
   "3": [
@@ -6260,8 +6260,8 @@
         "Rotting Fist: Melee Weapon Attack: {@hit +5} to hit, reach 5 ft., one target. Hit: 10 ({@dice 2d6+3}) bludgeoning damage plus 10 ({@dice 3d6}) necrotic damage. If the target is a creature, it must succeed on a DC 12 Constitution saving throw or be cursed with mummy rot. The cursed target can't regain hit points, and its hit point maximum decreases by 10 ({@dice 3d6}) for every 24 hours that elapse. If the curse reduces the target's hit point maximum to 0, the target dies, and its body turns to dust. The curse lasts until removed by the remove curse spell or other magic.",
         "Dreadful Glare: The mummy targets one creature it can see within 60 ft. of it. If the target can see the mummy, it must succeed on a DC 11 Wisdom saving throw against this magic or become frightened until the end of the mummy's next turn. If the target fails the saving throw by 5 or more, it is also paralyzed for the same duration. A target that succeeds on the saving throw is immune to the Dreadful Glare of all mummies (but not mummy lords) for the next 24 hours."
       ],
-      "faction": ["Dungeon"],
-      "terrain": ["arctic"]
+      "faction": ["Frostmourne"],
+      "terrain": ["arctic","desert"]
     },
     {
       "name": "Nightmare",
@@ -6466,8 +6466,8 @@
         "Longsword: Melee Weapon Attack: {@hit +4} to hit, reach 5 ft., one target. Hit: 6 ({@dice 1d8+2}) slashing damage, or 7 ({@dice 1d10+2}) slashing damage if used with two hands.",
         "Longbow: Ranged Weapon Attack: {@hit +4} to hit, range 150/600 ft., one target. Hit: 6 ({@dice 1d8+2}) piercing damage."
       ],
-      "faction": ["Dungeon"],
-      "terrain": ["arctic"]
+      "faction": ["Frostmourne"],
+      "terrain": ["arctic","hills"]
     },
     {
       "name": "Winter Wolf",
@@ -6678,12 +6678,6 @@
       "faction": ["Ulek"]
     },
     {
-      "name": "1d6 Human Commoners",
-      "cr": "4",
-      "terrain": ["farmland"],
-      "faction": ["Flan and Oerdian"]
-    },
-    {
       "name": "Banshee",
       "size": "M",
       "type": "undead",
@@ -6703,7 +6697,7 @@
         "Horrifying Visage: Each non-undead creature within 60 ft. of the banshee that can see her must succeed on a DC 13 Wisdom saving throw or be frightened for 1 minute. A frightened target can repeat the saving throw at the end of each of its turns, with disadvantage if the banshee is within line of sight, ending the effect on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to the banshee's Horrifying Visage for the next 24 hours.",
         "Wail (1/Day): The banshee releases a mournful wail, provided that she isn't in sunlight. This wail has no effect on constructs and undead. All other creatures within 30 ft. of her that can hear her must make a DC 13 Constitution saving throw. On a failure, a creature drops to 0 hit points. On a success, a creature takes 10 ({@dice 3d6}) psychic damage."
       ],
-      "faction": ["Dungeon"],
+      "faction": ["Frostmourne"],
       "terrain": ["arctic"]
     },
     {
@@ -6745,8 +6739,8 @@
       "action": [
         "Bite: Melee Weapon Attack: {@hit +5} to hit, reach 10 ft., one creature. Hit: 10 ({@dice 2d6+3}) piercing damage plus 10 ({@dice 3d6}) poison damage."
       ],
-      "faction": ["Dungeon"],
-      "terrain": ["ReplaceMe"]
+      "faction": ["Frostmourne", "Karast"],
+      "terrain": ["arctic","jungle"]
     },
     {
       "name": "Bone Naga (Spirit)",
@@ -6766,8 +6760,8 @@
       "action": [
         "Bite: Melee Weapon Attack: {@hit +5} to hit, reach 10 ft., one creature. Hit: 10 ({@dice 2d6+3}) piercing damage plus 10 ({@dice 3d6}) poison damage."
       ],
-      "faction": ["Dungeon"],
-      "terrain": ["ReplaceMe"]
+      "faction": ["Frostmourne"],
+      "terrain": ["arctic"]
     },
     {
       "name": "Chuul",
@@ -6857,7 +6851,7 @@
         "Battleaxe: Melee Weapon Attack: {@hit +7} to hit, reach 5 ft., one target. Hit: 14 ({@dice 2d8+5}) slashing damage.",
         "Morningstar: Melee Weapon Attack: {@hit +7} to hit, reach 5 ft., one target. Hit: 14 ({@dice 2d8+5}) piercing damage."
       ],
-      "faction": ["Dungeon"],
+      "faction": ["Hodir Ordning"],
       "terrain": ["arctic"]
     },
     {
@@ -6879,7 +6873,7 @@
         "Multiattack: The flameskull uses Fire Ray twice.",
         "Fire Ray: Ranged Spell Attack: {@hit +5} to hit, range 30 ft., one target. Hit: 10 ({@dice 3d6}) fire damage."
       ],
-      "faction": ["Dungeon"],
+      "faction": ["Frostmourne"],
       "terrain": ["arctic"]
     },
     {
@@ -6903,7 +6897,7 @@
         "Horrifying Visage: Each non-undead creature within 60 ft. of the ghost that can see it must succeed on a DC 13 Wisdom saving throw or be frightened for 1 minute. If the save fails by 5 or more, the target also ages {@dice 1d4} \u00c3\u2014 10 years. A frightened target can repeat the saving throw at the end of each of its turns, ending the frightened condition on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to this ghost's Horrifying Visage for the next 24 hours. The aging effect can be reversed with a greater restoration spell, but only within 24 hours of it occurring.",
         "Possession (Recharge 6): One humanoid that the ghost can see within 5 ft. of it must succeed on a DC 13 Charisma saving throw or be possessed by the ghost; the ghost then disappears, and the target is incapacitated and loses control of its body. The ghost now controls the body but doesn't deprive the target of awareness. The ghost can't be targeted by any attack, spell, or other effect, except ones that turn undead, and it retains its alignment, Intelligence, Wisdom, Charisma, and immunity to being charmed and frightened. It otherwise uses the possessed target's statistics, but doesn't gain access to the target's knowledge, class features, or proficiencies. The possession lasts until the body drops to 0 hit points, the ghost ends it as a bonus action, or the ghost is turned or forced out by an effect like the dispel evil and good spell. When the possession ends, the ghost reappears in an unoccupied space within 5 ft. of the body. The target is immune to this ghost's Possession for 24 hours after succeeding on the saving throw or after the possession ends."
       ],
-      "faction": ["Dungeon"],
+      "faction": ["Frostmourne"],
       "terrain": ["arctic"]
     },
     {
@@ -7229,12 +7223,6 @@
       "faction": ["Feyfrost"]
     },
     {
-      "name": "Hill Giant",
-      "cr": "5",
-      "terrain": ["arctic"],
-      "faction": ["Hodir Ordning"]
-    },
-    {
       "name": "Gladiator",
       "cr": "5",
       "terrain": ["arctic"],
@@ -7378,7 +7366,7 @@
         "Bite: Melee Weapon Attack: {@hit +3} to hit, reach 5 ft., one target. Hit: 14 ({@dice 4d6}) piercing damage.",
         "Eye Ray: The zombie uses a random magical eye ray, choosing a target that it can see within 60 feet of it. 1. Paralyzing Ray. The targeted creature must succeed on a DC 14 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. 2. Fear Ray. The targeted creature must succeed on a DC 14 Wisdom saving throw or be frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. 3. Enervation Ray. The targeted creature must make a DC 14 Constitution saving throw, taking 36 ({@dice 8d8}) necrotic damage on a failed save, or half as much damage on a successful one. 4. Disintegration Ray. If the target is a creature, it must succeed on a DC 14 Dexterity saving throw or take 45 ({@dice 10d8}) force damage. If this damage reduces the creature to 0 hit points, its body becomes a pile of fine gray dust. If the target is a Large or smaller nonmagical object or creation of magical force, it is disintegrated without a saving throw. If the target is a Huge or larger nonmagical object or creation of magical force, this ray disintegrates a 10-foot cube of it."
       ],
-      "faction": ["Dungeon"],
+      "faction": ["Frostmourne"],
       "terrain": ["arctic"]
     },
     {
@@ -7651,7 +7639,7 @@
         "Greatclub: Melee Weapon Attack: {@hit +8} to hit, reach 10 ft., one target. Hit: 18 ({@dice 3d8+5}) bludgeoning damage.",
         "Rock: Ranged Weapon Attack: {@hit +8} to hit, range 60/240 ft., one target. Hit: 21 ({@dice 3d10+5}) bludgeoning damage."
       ],
-      "faction": ["Dungeon"],
+      "faction": ["Hodir Ordning"],
       "terrain": ["arctic"]
     },
     {
@@ -7745,7 +7733,7 @@
         "Fist: Melee Weapon Attack: {@hit +7} to hit, reach 5 ft., one target. Hit: 11 ({@dice 2d6+4}) bludgeoning damage. If the target is a creature against which the revenant has sworn vengeance, the target takes an extra 14 ({@dice 4d6}) bludgeoning damage. Instead of dealing damage, the revenant can grapple the target (escape DC 14) provided the target is Large or smaller.",
         "Vengeful Glare: The revenant targets one creature it can see within 30 feet of it and against which it has sworn vengeance. The target must make a DC 15 Wisdom saving throw. On a failure, the target is paralyzed until the revenant deals damage to it, or until the end of the revenant's next turn. When the paralysis ends, the target is frightened of the revenant for 1 minute. The frightened target can repeat the saving throw at the end of each of its turns, with disadvantage if it can see the revenant, ending the frightened condition on itself on a success."
       ],
-      "faction": ["Dungeon"],
+      "faction": ["Frostmourne"],
       "terrain": ["arctic"]
     },
     {
@@ -7884,7 +7872,7 @@
         "Bite: Melee Weapon Attack: {@hit +7} to hit, reach 5 ft., one target. Hit: 7 ({@dice 1d6+4}) piercing damage.",
         "Claw: Melee Weapon Attack: {@hit +7} to hit, reach 5 ft., one target. Hit: 11 ({@dice 2d6+4}) slashing damage."
       ],
-      "faction": ["Dungeon"],
+      "faction": ["Hodir Ordning"],
       "terrain": ["arctic"]
     },
     {
@@ -7955,7 +7943,7 @@
         "Bite: Melee Weapon Attack: {@hit +6} to hit, reach 5 ft., one willing creature, or a creature that is grappled by the vampire, incapacitated, or restrained. Hit: 6 ({@dice 1d6+3}) piercing damage plus 7 ({@dice 2d6}) necrotic damage. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken, and the vampire regains hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.",
         "Claws: Melee Weapon Attack: {@hit +6} to hit, reach 5 ft., one creature. Hit: 8 ({@dice 2d4+3}) slashing damage. Instead of dealing damage, the vampire can grapple the target (escape DC 13)."
       ],
-      "faction": ["Dungeon"],
+      "faction": ["Frostmourne"],
       "terrain": ["arctic"]
     },
     {
@@ -8029,7 +8017,7 @@
         "Life Drain: Melee Weapon Attack: {@hit +6} to hit, reach 5 ft., one creature. Hit: 21 ({@dice 4d8+3}) necrotic damage. The target must succeed on a DC 14 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.",
         "Create Specter: The wraith targets a humanoid within 10 feet of it that has been dead for no longer than 1 minute and died violently. The target's spirit rises as a specter in the space of its corpse or in the nearest unoccupied space. The specter is under the wraith's control. The wraith can have no more than seven specters under its control at one time."
       ],
-      "faction": ["Dungeon"],
+      "faction": ["Frostmourne"],
       "terrain": ["arctic"]
     },
     {
@@ -8223,7 +8211,7 @@
         "Greatclub: Melee Weapon Attack: {@hit +9} to hit, reach 10 ft., one target. Hit: 19 ({@dice 3d8+6}) bludgeoning damage.",
         "Rock: Ranged Weapon Attack: {@hit +9} to hit, range 30/120 ft., one target. Hit: 28 ({@dice 4d10+6}) bludgeoning damage."
       ],
-      "faction": ["Dungeon"],
+      "faction": ["Hodir Ordning"],
       "terrain": ["arctic"]
     },
     {
@@ -8756,7 +8744,7 @@
         "Glaive: Melee Weapon Attack: {@hit +7} to hit, reach 10 ft., one target. Hit: 15 ({@dice 2d10+4}) slashing damage, or 9 ({@dice 1d10+4}) slashing damage in Small or Medium form.",
         "Change Shape: The oni magically polymorphs into a Small or Medium humanoid, into a Large giant, or back into its true form. Other than its size, its statistics are the same in each form. The only equipment that is transformed is its glaive, which shrinks so that it can be wielded in humanoid form. If the oni dies, it reverts to its true form, and its glaive reverts to its normal size."
       ],
-      "faction": ["Dungeon"],
+      "faction": ["Hodir Ordning"],
       "terrain": ["ReplaceMe"]
     },
     {
@@ -8801,7 +8789,7 @@
         "Greatclub: Melee Weapon Attack: {@hit +9} to hit, reach 15 ft., one target. Hit: 19 ({@dice 3d8+6}) bludgeoning damage.",
         "Rock: Ranged Weapon Attack: {@hit +9} to hit, range 60/240 ft., one target. Hit: 28 ({@dice 4d10+6}) bludgeoning damage. If the target is a creature, it must succeed on a DC 17 Strength saving throw or be knocked prone."
       ],
-      "faction": ["Dungeon"],
+      "faction": ["Hodir Ordning"],
       "terrain": ["arctic"]
     },
     {
@@ -9054,7 +9042,7 @@
         "Evil Eye: The fomorian magically forces a creature it can see within 60 feet of it to make a DC 14 Charisma saving throw. The creature takes 27 ({@dice 6d8}) psychic damage on a failed save, or half as much damage on a successful one.",
         "Curse of the Evil Eye (Recharges after a Short or Long Rest): With a stare, the fomorian uses Evil Eye, but on a failed save, the creature is also cursed with magical deformities. While deformed, the creature has its speed halved and has disadvantage on ability checks, saving throws, and attacks based on Strength or Dexterity. The transformed creature can repeat the saving throw whenever it finishes a long rest, ending the effect on a success."
       ],
-      "faction": ["Dungeon"],
+      "faction": ["Hodir Ordning"],
       "terrain": ["arctic"]
     },
     {
@@ -9077,7 +9065,7 @@
         "Greataxe: Melee Weapon Attack: {@hit +9} to hit, reach 10 ft., one target. Hit: 25 ({@dice 3d12+6}) slashing damage.",
         "Rock: Ranged Weapon Attack: {@hit +9} to hit, range 60/240 ft., one target. Hit: 28 ({@dice 4d10+6}) bludgeoning damage."
       ],
-      "faction": ["Dungeon"],
+      "faction": ["Hodir Ordning"],
       "terrain": ["arctic"]
     },
     {
@@ -9473,7 +9461,7 @@
         "Morningstar: Melee Weapon Attack: {@hit +12} to hit, reach 10 ft., one target. Hit: 21 ({@dice 3d8+8}) piercing damage.",
         "Rock: Ranged Weapon Attack: {@hit +12} to hit, range 60/240 ft., one target. Hit: 30 ({@dice 4d10+8}) bludgeoning damage."
       ],
-      "faction": ["Dungeon"],
+      "faction": ["Hodir Ordning"],
       "terrain": ["arctic"]
     },
     {
@@ -9496,7 +9484,7 @@
         "Greatsword: Melee Weapon Attack: {@hit +11} to hit, reach 10 ft., one target. Hit: 28 ({@dice 6d6+7}) slashing damage.",
         "Rock: Ranged Weapon Attack: {@hit +11} to hit, range 60/240 ft., one target. Hit: 29 ({@dice 4d10+7}) bludgeoning damage."
       ],
-      "faction": ["Dungeon"],
+      "faction": ["Hodir Ordning", "Magma Dwellers"],
       "terrain": ["arctic"]
     },
     {
@@ -10477,7 +10465,7 @@
         "Charm: The vampire targets one humanoid it can see within 30 ft. of it. If the target can see the vampire, the target must succeed on a DC 17 Wisdom saving throw against this magic or be charmed by the vampire. The charmed target regards the vampire as a trusted friend to be heeded and protected. Although the target isn't under the vampire's control, it takes the vampire's requests or actions in the most favorable way it can, and it is a willing target for the vampire's bit attack. Each time the vampire or the vampire's companions do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts 24 hours or until the vampire is destroyed, is on a different plane of existence than the target, or takes a bonus action to end the effect.",
         "Children of the Night (1/Day): The vampire magically calls {@dice 2d4} swarms of {@creature swarm of bats|mm|bats} or {@creature swarm of rats|mm|rats}, provided that the sun isn't up. While outdoors, the vampire can call {@dice 3d6} {@creature wolf|mm|wolves} instead. The called creatures arrive in {@dice 1d4} rounds, acting as allies of the vampire and obeying its spoken commands. The beasts remain for 1 hour, until the vampire dies, or until the vampire dismisses them as a bonus action."
       ],
-      "faction": ["Dungeon"],
+      "faction": ["Frostmourne"],
       "terrain": ["arctic"]
     },
     {
@@ -10721,7 +10709,7 @@
         "Charm: The vampire targets one humanoid it can see within 30 ft. of it. If the target can see the vampire, the target must succeed on a DC 17 Wisdom saving throw against this magic or be charmed by the vampire. The charmed target regards the vampire as a trusted friend to be heeded and protected. Although the target isn't under the vampire's control, it takes the vampire's requests or actions in the most favorable way it can, and it is a willing target for the vampire's bit attack. Each time the vampire or the vampire's companions do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts 24 hours or until the vampire is destroyed, is on a different plane of existence than the target, or takes a bonus action to end the effect.",
         "Children of the Night (1/Day): The vampire magically calls {@dice 2d4} swarms of {@creature swarm of bats|mm|bats} or {@creature swarm of rats|mm|rats}, provided that the sun isn't up. While outdoors, the vampire can call {@dice 3d6} {@creature wolf|mm|wolves} instead. The called creatures arrive in {@dice 1d4} rounds, acting as allies of the vampire and obeying its spoken commands. The beasts remain for 1 hour, until the vampire dies, or until the vampire dismisses them as a bonus action."
       ],
-      "faction": ["Dungeon"],
+      "faction": ["Frostmourne"],
       "terrain": ["arctic"]
     },
     {
@@ -10748,7 +10736,7 @@
         "Charm: The vampire targets one humanoid it can see within 30 ft. of it. If the target can see the vampire, the target must succeed on a DC 17 Wisdom saving throw against this magic or be charmed by the vampire. The charmed target regards the vampire as a trusted friend to be heeded and protected. Although the target isn't under the vampire's control, it takes the vampire's requests or actions in the most favorable way it can, and it is a willing target for the vampire's bit attack. Each time the vampire or the vampire's companions do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts 24 hours or until the vampire is destroyed, is on a different plane of existence than the target, or takes a bonus action to end the effect.",
         "Children of the Night (1/Day): The vampire magically calls {@dice 2d4} swarms of {@creature swarm of bats|mm|bats} or {@creature swarm of rats|mm|rats}, provided that the sun isn't up. While outdoors, the vampire can call {@dice 3d6} {@creature wolf|mm|wolves} instead. The called creatures arrive in {@dice 1d4} rounds, acting as allies of the vampire and obeying its spoken commands. The beasts remain for 1 hour, until the vampire dies, or until the vampire dismisses them as a bonus action."
       ],
-      "faction": ["Dungeon"],
+      "faction": ["Frostmourne"],
       "terrain": ["arctic"]
     }
   ],
@@ -10915,8 +10903,8 @@
         "Frightful Presence: Each creature of the dracolich's choice that is within 120 feet of the dracolich and aware of it must succeed on a DC 18 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dracolich's Frightful Presence for the next 24 hours.",
         "Lightning Breath (Recharge 5\u20146): The dracolich exhales lightning in a 90-foot line that is 5 feet wide. Each creature in that line must make a DC 20 Dexterity saving throw, taking 66 ({@dice 12d10}) lightning damage on a failed save, or half as much damage on a successful one."
       ],
-      "faction": ["Dungeon"],
-      "terrain": ["ReplaceMe"]
+      "faction": ["Frostmourne", "Pale Wyrms"],
+      "terrain": ["arctic", "hills"]
     },
     {
       "name": "Adult Gold Dragon",
@@ -11533,7 +11521,7 @@
         "Bite: Melee Weapon Attack: {@hit +5} to hit, reach 5 ft., one target. Hit: 14 ({@dice 4d6}) piercing damage.",
         "Eye Rays: The death tyrant shoots three of the following magical eye rays at random (reroll duplicates), choosing one to three targets it can see within 120 ft. of it: 1. Charm Ray. The targeted creature must succeed on a DC 17 Wisdom saving throw or be charmed by the death tyrant for 1 hour, or until the death tyrant harms the creature. 2. Paralyzing Ray. The targeted creature must succeed on a DC 17 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. 3. Fear Ray. The targeted creature must succeed on a DC 17 Wisdom saving throw or be frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. 4. Slowing Ray. The targeted creature must succeed on a DC 17 Dexterity saving throw. On a failed save, the target's speed is halved for 1 minute. In addition, the creature can't take reactions, and it can take either an action or a bonus action on its turn, not both. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. 5. Enervation Ray. The targeted creature must make a DC 17 Constitution saving throw, taking 36 ({@dice 8d8}) necrotic damage on a failed save, or half as much damage on a successful one. 6. Telekinetic Ray. If the target is a creature, it must succeed on a DC 17 Strength saving throw or the death tyrant moves it up to 30 ft. in any direction. It is restrained by the ray's telekinetic grip until the start of the death tyrant's next turn or until the death tyrant is incapacitated. If the target is an object weighing 300 pounds or less that isn't being worn or carried, it is moved up to 30 ft. in any direction. The death tyrant can also exert fine control on objects with this ray, such as manipulating a simple tool or opening a door or a container. 7. Sleep Ray. The targeted creature must succeed on a DC 17 Wisdom saving throw or fall asleep and remain unconscious for 1 minute. The target awakens if it takes damage or another creature takes an action to wake it. This ray has no effect on constructs and undead. 8. Petrification Ray. The targeted creature must make a DC 17 Dexterity saving throw. On a failed save, the creature begins to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is petrified until freed by the greater restoration spell or other magic. 9. Disintegration Ray. If the target is a creature, it must succeed on a DC 17 Dexterity saving throw or take 45 ({@dice 10d8}) force damage. If this damage reduces the creature to 0 hit points, its body becomes a pile of fine gray dust. If the target is a Large or smaller nonmagical object or creation of magical force, it is disintegrated without a saving throw. If the target is a Huge or larger object or creation of magical force, this ray disintegrates a 10-foot cube of it. 10. Death Ray. The targeted creature must succeed on a DC 17 Dexterity saving throw or take 55 ({@dice 10d10}) necrotic damage. The target dies if the ray reduces it to 0 hit points."
       ],
-      "faction": ["Dungeon"],
+      "faction": ["Frostmourne"],
       "terrain": ["arctic"]
     }
   ],
@@ -11557,7 +11545,7 @@
         "Howl (Recharge 5\u20146): The demilich emits a bloodcurdling howl. Each creature within 30 feet of the demilich that can hear the howl must succeed on a DC 15 Constitution saving throw or drop to 0 hit points. On a successful save, the creature is frightened until the end of its next turn.",
         "Life Drain: The demilich targets up to three creatures that it can see within 10 feet of it. Each target must succeed on a DC 19 Constitution saving throw or take 21 ({@dice 6d6}) necrotic damage, and the demilich regains hit points equal to the total damage dealt to all targets."
       ],
-      "faction": ["Dungeon"],
+      "faction": ["Frostmourne"],
       "terrain": ["arctic"]
     }
   ],
@@ -11580,7 +11568,7 @@
       "action": [
         "Paralyzing Touch: Melee Spell Attack: {@hit +12} to hit, reach 5 ft., one creature. Hit: 10 ({@dice 3d6}) cold damage. The target must succeed on a DC 18 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
       ],
-      "faction": ["Dungeon"],
+      "faction": ["Frostmourne"],
       "terrain": ["arctic"]
     }
   ],
@@ -11630,7 +11618,7 @@
         "Rotting Fist: Melee Weapon Attack: {@hit +9} to hit, reach 5 ft., one target. Hit: 14 ({@dice 3d6+4}) bludgeoning damage plus 21 ({@dice 6d6}) necrotic damage. If the target is a creature, it must succeed on a DC 16 Constitution saving throw or be cursed with mummy rot. The cursed target can't regain hit points, and its hit point maximum decreases by 10 ({@dice 3d6}) for every 24 hours that elapse. If the curse reduces the target's hit point maximum to 0, the target dies, and its body turns to dust. The curse lasts until removed by the remove curse spell or other magic.",
         "Dreadful Glare: The mummy lord targets one creature it can see within 60 feet of it. If the target can see the mummy lord, it must succeed on a DC 16 Wisdom saving throw against this magic or become frightened until the end of the mummy's next turn. If the target fails the saving throw by 5 or more, it is also paralyzed for the same duration. A target that succeeds on the saving throw is immune to the Dreadful Glare of all mummies and mummy lords for the next 24 hours."
       ],
-      "faction": ["Dungeon"],
+      "faction": ["Frostmourne"],
       "terrain": ["arctic"]
     }
   ],
